@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Power Center</title>
+  <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../fonts/Font-Awesome-3.2.1/css/font-awesome.css">
+
+  <link rel="stylesheet" type="text/css" href="../styles/theme.css">
+</head>
+<body>
+<div id="test"></div>
+
+<script>
+var require={
+  baseUrl:"../scripts",
+  config:{
+    "dojo/css":{
+      baseUrl:"../scripts"
+    },
+    "dojo/nls":{
+      baseUrl:"../scripts",
+      lang:document.documentElement.lang
+    }  
+  },
+  skipDataMain:true
+};
+</script>
+
+<script src="../scripts/require.js"></script>
+<script src="../scripts/jquery.js"></script>
+<script src="../scripts/v8natives.js"></script>
+<script>
+  require([
+    'ts/util/GUtil',
+  ],function(GUtil){
+    require([
+      'ts/widgets/CommonGrid'
+    ],function(CommonGrid){    
+
+     var gridOpts = {
+        url: 'platformList.json',
+        multiSelect: false, //是否多选
+        afterSelectionChange: function(itemData, e){
+            alert('选中回调')
+            //选中行回调
+            return true;//返回true选中，返回false不选中
+        },
+        gridActions: [//配置按钮
+            {
+              text: '安装操作系统',
+              iconClsName: 'glyphicon glyphicon-plus',//按钮上的icon
+              clickCB: function() {
+                //这里就是dialog，参考testDialog.html
+                Dialog.create({
+                  title: 'InstallOSWizard',
+                  url: 'ts/common/InstallOSWizard',
+                  widgetOpts: {
+                    platformId: '',
+                    platformPcid: '',
+                    platformType: '',
+                  },
+                  width: 1060,
+                  height: 450
+                });
+              }
+            },
+            {
+              text: '获取选中数据',
+              iconClsName: 'glyphicon glyphicon-plus',
+              clickCB: function() {
+                var data = this.getData();
+                alert('获取选中数据, 请看Console')
+                console.log('获取选中数据')
+                console.log(data)
+              }
+            }            
+        ],
+        gridSearchCondition: [//搜索条件配置
+            {
+                text: 'platformName',
+                name: 'name',
+                aliasName: 'platformName'
+
+            },
+            {
+              text: 'platformType',
+              type: 'select',
+              options: [
+                  {val: '0', text: 'IVM'},
+                  {val: '1', text: 'HMC'},
+                  {val: '2', text: 'XCAT'}
+              ],
+              selectedOption: 0,//options val 值
+              // selectedOptionIndex: 1,//默认显示第几个
+              name: 'platformType'
+           },
+           {
+              type: 'checkbox',
+              name: 'test',
+              text: '多选',
+              data: [
+                  {val: '0', text: 'IVM', checked: true},
+                  {val: '1', text: 'XCAT'},
+                  {val: '2', text: 'HMC'},
+
+              ],
+              // search: {//定制按钮
+              //     text: '定制查询',
+              //     clickCB: function(data){
+              //         return true;
+              //     }
+              // }
+          }   
+        ],
+        columnDefs: [
+            {field: 'name', displayName: 'platformName'},
+            {
+                field: 'type', 
+                displayName: 'platformType',
+                cellFormatter: function(data){
+                    var platformTypeMap = {
+                        0: 'IVM',
+                        1: 'HMC',
+                        2: 'XCAT'
+                    };
+
+                    return platformTypeMap[data] || data;
+                }
+            },
+            {field: 'ip', displayName: 'ip'},
+            {field: 'hostCount', displayName: 'hostCount'},
+        ]
+    };
+
+    var grid = this.grid = new CommonGrid(gridOpts);
+
+    grid.placeAt($('#test'), 'append');      
+   
+  });
+});
+
+</script>
+</body>
+</html>
+
+

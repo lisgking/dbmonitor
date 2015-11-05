@@ -1,0 +1,5 @@
+{
+	"platform_name":"平台名称",
+	"num_of_hosts":"主机数量",
+	"num_of_lpars":"LPAR数量"
+}

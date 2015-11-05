@@ -1,0 +1,87 @@
+#TSSelect .ts-icon-search:hover:before {
+    opacity: 0.6;
+}
+#TSSelect .ts-icon-search:before {
+    content: "\f002";
+}
+#TSSelect  {
+    position: relative;
+    float: right;
+    width: 100%;
+	top: -35px;
+	text-align: right;
+}
+.ts-search-input-wrap {
+    position: absolute;
+    right: 20px;
+    height: 30px;
+    width: 0;
+    overflow: hidden;
+    -webkit-transition: width 200ms;
+    -moz-transition: width 200ms;
+    transition: width 200ms;
+}
+#TSSelect .ts-search-open .ts-search-input-wrap {
+    width: 148px;
+}
+
+#TSSelect .ts-icon-search {
+    cursor: pointer;
+}
+
+#TSSelect  .ct-icon-search:before {
+	content: "\e006";
+	font-size: 18px;
+}
+
+#TSSelect .ts-search-open .ts-icon-search{
+    background: #237dac;
+    color: #fff;
+    z-index: 1;
+    pointer-events: none;
+}
+input[type="submit"].ts-search-submit {
+    background: transparent;
+    color: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    outline: none;
+    z-index: -1;
+}
+#TSSelect .ts-search-open input[type="submit"].ts-search-submit {
+    z-index: 90;
+}
+input[type="text"].ts-search-input {
+    border: 1px solid #ccc;
+    outline: none;
+    opacity: 0;
+    background: #fff;
+    float: right;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    padding: 2px 7px;
+    font-weight: normal;
+}
+#TSSelect .ts-search-open input[type="text"].ts-search-input {
+    opacity: 1;
+}
+#TSSelect .ts-search-open .ts-search-input-wrap {
+    width: 80%;
+}
+#TSSelect  .searchSelelct{
+    float: right;
+    height: 30px;
+    width: 100%;
+    font-weight: normal;
+    padding: 0 4px;
+}
+#TSSelect .selectBtn{
+    margin: 5px;
+	cursor: pointer;
+}
+#TSSelect  .selectBtn:hover:before {
+    opacity: 0.6;
+}

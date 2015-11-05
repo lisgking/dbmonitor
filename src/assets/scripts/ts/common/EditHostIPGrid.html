@@ -1,0 +1,78 @@
+<div class="editLparIpGrid">
+	<div class="-ts-datagrid">
+		<h3 class="-ts-gcaption" data-role="gcaption" hidden="hidden"></h3>
+		<div class="-ts-gtoolbar" data-role="gtoolbar" hidden="hidden"></div>
+		<div class="-ts-core-wrap" data-role="gtable">
+			<ul role="menu" class="-ts-menu" data-type="context"
+				data-role="colmenu" hidden>
+
+			</ul>
+			<div class="-ts-ghead" data-role="ghead">
+				<table
+					class="-ts-ghead-table table table-bordered table-striped table-hover table-condensed">
+					<thead data-role="thead">
+						<tr>
+							<th class="spacer">&#160;</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="-ts-gbody" data-role="gbody">
+				<table
+					class="-ts-gbody-table table table-bordered table-striped table-hover table-condensed">
+					<tbody data-role="tbody">
+						<tr class="line-bjcolor">
+							<td class="spacer">&#160;</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="-ts-gfoot table-footer-adjust" data-role="gfoot">
+			<fieldset data-role="fieldset">
+				<table class="-ts-gfoot-table">
+					<tfoot data-role="tfoot" hidden="hidden">
+						<tr>
+							<td class="align-left"><label class="nowrap-inline-block">${PageSize}:
+									<select name="rp">
+										<option value="10">10</option>
+										<option value="20" selected="selected">20</option>
+										<option value="50">50</option>
+										<option value="100">100</option>
+										<option value="2147483647">${Unlimited}</option>
+								</select>
+							</label> <label class="nowrap-inline-block">${PageNo}: <select
+									name="page" data-role="page">
+										<option value="1">1</option>
+								</select>
+							</label> <label class="nowrap-inline-block page-info"></label></td>
+							<td class="align-right">
+								<button class="button-row" type="button" data-role="prev">
+									<img src="/assets/images/icon-arrowlinaerl.png" />
+								</button>
+								<button class="button-row" type="button" data-role="next">
+									<img src="/assets/images/icon-arrowlinaerr.png" />
+								</button>
+								<button class="button-row" type="button" data-role="reload">
+									<img src="/assets/images/icon-repeat.png" />
+								</button>
+								<button class="button-row" type="button" data-role="home">
+									<img src="/assets/images/icon-homepage.png" />
+								</button>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+
+			</fieldset>
+		</div>
+
+		<div class="waiting"></div>
+	</div>
+	<div class="modal-footer my_modal_footer">
+		<button type="button" id="save" data-role="save"
+			class="btn btn-primary save">${Submit}</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal">${Cancel}</button>
+	</div>
+</div>

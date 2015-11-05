@@ -1,0 +1,37 @@
+{
+	"tags": {
+		"allowUnknownTags": true
+	},
+	"source": {
+		"include": [
+			"jsm/util",
+			"jsm/shims"
+		],
+		"exclude": [],
+		"includePattern": ".+\\.js(doc)?$",
+		"excludePattern": "(^|\\/|\\\\)_"
+	},
+	"plugins": [],
+	"templates": {
+		"cleverLinks": false,
+		"monospaceLinks": false
+	},
+	"opts": {
+		"template": "templates/default",
+		"encoding": "utf8",
+		"destination": "../../jsapis",
+		"recurse": true,
+		"tutorials": "",
+		"query": "value",
+		"private": true,
+		"lenient": true,
+		
+		"version": true,
+		"explain": true,
+		"test": true,
+		"help": true,
+		"verbose": true,
+		"match": "value",
+		"nocolor": true
+	}
+}

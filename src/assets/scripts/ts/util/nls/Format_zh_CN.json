@@ -1,0 +1,19 @@
+{
+	"just_now":"刚才",
+	"n_seconds_ago":"$0秒前",
+	"a_minute_ago":"1分钟前",
+	"n_minutes_ago":"$0分钟前",
+	"an_hour_ago":"1小时前",
+	"n_hours_ago":"$0小时前",
+	"a_day_ago":"昨天",
+	"n_days_ago":"$0天前",
+	"a_month_ago":"上个月",
+	"n_months_ago":"$0个月前",
+	"a_year_ago":"去年",
+	"n_years_ago":"$0年前",
+	"long_long_ago":"很久很久以前",
+	"hour_time_string":"$h小时$m分$s秒$ms毫秒",
+	"min_time_string":"$m分$s秒$ms毫秒",
+	"s_time_string":"$s秒$ms毫秒",
+	"ms_time_string":"$ms毫秒"
+}

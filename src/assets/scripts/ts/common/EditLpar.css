@@ -1,0 +1,114 @@
+#EditLparTest .tasks-widget{
+    position: relative;
+    /*border: 5px solid #ddd;*/
+    background: #F5F5F5;
+}
+
+#EditLparTest .tasks-widget.horizontal{
+    width: 100%;
+}
+
+#EditLparTest .tasks-widget.vertical{
+    height: 600px;
+    width: 125px;
+}
+
+#EditLparTest .tasks-widget .arrow{
+    position: absolute;
+    display: none;
+    font-size:25px;
+}
+
+#EditLparTest .tasks-widget .arrow.disabled a{
+    color: #ADACAC;
+}
+
+#EditLparTest .horizontal.tasks-widget .arrow{
+    width: 30px;
+}
+
+#EditLparTest .vertical.tasks-widget .arrow{
+    height: 30px;
+}
+
+#EditLparTest .horizontal.tasks-widget .arrow-end{
+    right:0;
+}
+
+#EditLparTest .vertical.tasks-widget .arrow-end{
+    bottom:0;
+}
+
+#EditLparTest .tasks-container{
+    overflow: hidden;
+}
+
+#EditLparTest .horizontal .tasks-container{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#EditLparTest .vertical .tasks-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 540px;
+}
+
+#EditLparTest .tasks-container .tasks{
+    position: relative;
+    margin-bottom: 0;
+}
+
+#EditLparTest .horizontal .tasks-container .tasks{
+    width: 2000px;
+}
+
+#EditLparTest .vertical .tasks-container .tasks{
+    height: 2000px;
+}
+
+#EditLparTest .tasks a {
+    position: relative;
+    display: block;
+    padding: 5px;
+    overflow: hidden;
+    width: 145px;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #C5D0DC;
+    background: #F9F9F9;
+    color: #000;
+}
+
+#EditLparTest .tasks a:hover {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    background-color: #5BC0DE;
+    border-color: #46B8DA;
+}
+
+#EditLparTest .tasks li.active a {
+    border: 1px solid #5090C1;
+    background: #5090C1;
+    color: #FFF;
+}
+
+#EditLparTest .tasks li.active .close {
+    display: block !important;
+}
+
+#EditLparTest .tasks a:hover  .close{
+    display: block !important;
+}
+#EditLparTest .tasks li .close {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    /*background: red;*/
+}
+
+#EditLparTest .list-inline > li:first-child{
+    padding-left: 5px;
+}
+

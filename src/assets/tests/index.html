@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>QUnit Tests</title>
+	<base href="../../" /><!--[if IE]>
+	<script>(function(b){if(b)b.href=b.href;}(document.getElementsByTagName("base")[0]));</script><![endif]-->
+	<link rel="stylesheet" href="assets/styles/global.css" />
+	<link rel="stylesheet" href="assets/tests/index.css" />
+</head>
+<body>
+	<div class="aside dark">
+		<h1>QUnit Tests</h1>
+		<ul id="testlist" class="testlist">
+			<li hidden><a href="assets/tests/runner.html?main=path%2Fto%2Ftest" target="_stage">Test</a></li>
+		</ul>
+	</div>
+	<div class="main">
+		<iframe id="_stage" name="_stage" src="assets/tests/runner.html"></iframe>
+	</div>
+<script>
+var require={
+	baseUrl:"assets/scripts",
+	skipDataMain:true
+};
+</script><!--[if IE]>
+<script src="assets/scripts/require.js"></script><![endif]--><!--[if !IE]><!-->
+<script src="assets/scripts/alameda.js"></script><!--<![endif]-->
+<script src="assets/scripts/jquery.js"></script>
+<script src="assets/scripts/v8natives.js"></script>
+<script>
+require(["jquery","dojo/json!../tests/manifest.json"],function($,manifest){
+	var list=$("#testlist")[0];
+	var typicalItem=list.removeChild(list.firstElementChild);
+	typicalItem.hidden=false;
+	require.config(manifest);
+	manifest.tests.forEach(function(test){
+		var li=typicalItem.cloneNode(true);
+		list.appendChild(li);
+		var a=li.firstElementChild;
+		a.textContent=test.title,
+		a.search="?"+$.param(test);
+	});
+	list.addEventListener("click",function(e){
+		var a=e.target;
+		if(a.tagName==="A"){
+			var current=this.querySelector("a.current");
+			if(current){
+				current.classList.remove("current");
+			}
+			a.classList.add("current");
+		}
+	},true);
+});
+</script>
+</body>
+</html>
+
+

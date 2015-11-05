@@ -1,0 +1,96 @@
+{
+	"multiple":true,
+	"*":{
+		"dataTime":"更新时间",
+		"entityName":"实体名称",
+		"entityPcid":"实体ID",
+		"entityType":"实体类型",
+		"errorCode":"错误代码",
+		"errorDesc":"错误描述",
+		"hostPcid":"主机ID",
+		"logDetail":"日志详情",
+		"operatioLogId":"日志ID",
+		"operationResult":"操作结果",
+		"operationTime":"操作时间",
+		"operationType":"操作类型",
+		"operationTypeName":"操作名称",
+		"packageAppId":"应用ID",
+		"platformPcid":"平台ID",
+		"userId":"操作者ID",
+		"userName":"操作者",
+		
+		"RecentLogs":"最近日志"
+	},
+	"LogList":{
+		"UNKNOWN":"未知",
+		"DONE":"完成",
+		"FAIL":"失败",
+		
+		"OS_IMAGE":"系统映像",
+		"OS_IMAGE#UPLOAD":"上传",
+		"OS_IMAGE#IMPORT":"导入",
+		"OS_IMAGE#DELETE":"删除",
+		"OS_IMAGE#UPDATE":"编辑",
+		
+		"USER":"账户",
+		"USER#ADD":"创建",
+		"USER#EDIT":"更改账户",
+		"USER#CANCEL":"删除",
+		"USER#ALTERPASS":"修改密码",
+		"USER#RESETPASS":"重置密码",
+		
+		"DEPLOY_ENGINE":"部署引擎",
+		"DEPLOY_ENGINE#ADD":"注册",
+		"DEPLOY_ENGINE#UPDATE":"编辑",
+		
+		"CRON_JOB":"任务计划",
+		"CRON_JOB#START":"激活",
+		"CRON_JOB#STOP":"阻止活动",
+		
+		"clear_upload":"清理已上传的文件",
+		
+		"PLATFORM":"平台",
+		"PLATFORM#REGISTER":"注册",
+		"PLATFORM#RENAME":"重命名",
+		"PLATFORM#REFRESH":"刷新",
+		"PLATFORM#DELETE":"删除",
+		"PLATFORM#START":"启动",
+		
+		"HOST":"主机",
+		"HOST#REGISTER":"注册",
+		"HOST#RENAME":"重命名",
+		"HOST#REFRESH":"刷新",
+		"HOST#DELETE":"删除",
+		"HOST#START":"启动",
+		"HOST#STOP":"停止",
+		"HOST#UPDATEIP":"修改IP",
+		"HOST#SETUPTRUST":"互信",
+		"HOST#RESTART":"重启",
+		"DELETE":"删除主机",
+		"IMPORT":"导入镜像",
+		
+		"LPAR":"分区",
+		"LPAR#REGISTER":"注册",
+		"LPAR#RENAME":"重命名",
+		"LPAR#DELETE":"删除",
+		"LPAR#START":"启动",
+		"LPAR#STOP":"停止",
+		"LPAR#UPDATEIP":"修改IP",
+		"LPAR#SETUPTRUST":"互信",
+		"LPAR#INSTALLOS":"安装操作系统",
+		"LPAR#UPDATEOSINFO":"关联系统映像",
+		"LPAR#RESTART":"重启",
+		"LPAR#CREATE":"新建",
+		"LPAR#OPENCONSOLE":"打开控制台",
+		"CONFIGLPAR":"编辑分区",
+		
+		"SOFT_BUNDLE":"软件包",
+		"SOFT_BUNDLE#DEPLOY":"部署",
+		"SOFT_BUNDLE#UNLOAD":"删除",
+		"SOFT_BUNDLE#EDIT":"编辑",
+		"SOFT_BUNDLE#UPGRADE":"升级",
+		
+		"SOFTWARE_INSTALL":"分区软件安装",
+		"SOFTWARE_UNINSTALL":"分区软件卸载"
+	}
+}

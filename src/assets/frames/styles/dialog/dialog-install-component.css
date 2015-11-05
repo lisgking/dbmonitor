@@ -1,0 +1,11 @@
+/*~~~~~~~~~~dialog-steps~~~~~~~~~~*/
+.dialog-install-component{
+	
+}
+.dialog-install-component .dialog-steps td{
+	width:25%;
+}
+.dialog-install-component .steps-track{
+	width:570px;
+	margin-left:-285px;
+}

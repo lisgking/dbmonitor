@@ -1,0 +1,20 @@
+define("ts/t3/cluster/NewClusterStepBundle",[
+	"./newClusterSteps/StepIntroduction",
+	"./newClusterSteps/StepProfile",
+	"./newClusterSteps/StepSelectNodes",
+	"./newClusterSteps/StepSelectComponents",
+	"./newClusterSteps/StepDeployment",
+	"./newClusterSteps/StepConfiguration",
+	"./newClusterSteps/StepSummary"
+],function(StepIntroduction,StepProfile,StepSelectNodes,StepSelectComponents,
+			StepDeployment,StepConfiguration,StepSummary){
+	return {
+		StepIntroduction:StepIntroduction,
+		StepProfile:StepProfile,
+		StepSelectNodes:StepSelectNodes,
+		StepSelectComponents:StepSelectComponents,
+		StepDeployment:StepDeployment,
+		StepConfiguration:StepConfiguration,
+		StepSummary:StepSummary
+	};
+});

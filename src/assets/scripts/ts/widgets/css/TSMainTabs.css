@@ -1,0 +1,136 @@
+/* tabs */
+.tablist{
+	position:relative;
+	z-index:2;
+	padding-left:0;
+	list-style-type:none;
+}
+.tablist>li{
+	float:left;
+	min-width:120px;
+}
+.tablist>li>a{
+	display:block;
+	text-align:center;
+	line-height:24px;
+	height:24px;
+	border:1px solid #777777;
+	border-radius:4px 4px 0 0;
+	background:#c4c4c4;
+	color:#000000;
+	margin-top:4px;
+	padding:0 10px;
+	cursor:default;
+	position: relative;
+	text-decoration:none;
+}
+.tablist>li>a:focus{
+	z-index:3;
+}
+.tablist>li>a[aria-selected="true"]{
+	margin-top:0;
+	line-height:28px;
+	height:28px;
+	color:#6699cc;
+	font-weight:bold;
+	z-index:3;
+}
+.tablist.silver2white>li>a[aria-selected="true"]{
+	background:linear-gradient(top,#cccccc,#f5f5f5,#ffffff);
+	background:-ms-linear-gradient(top,#cccccc,#f5f5f5,#ffffff);
+	background:-moz-linear-gradient(top,#cccccc,#f5f5f5,#ffffff);
+	background:-webkit-linear-gradient(top,#cccccc,#f5f5f5,#ffffff);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5',endColorStr='#ffffff')";
+	border-bottom:1px solid #ffffff;
+}
+.tablist.gray2silver>li>a[aria-selected="true"]{
+	background:linear-gradient(top,#cccccc,#eeeeee,#f0f0f0);
+	background:-ms-linear-gradient(top,#cccccc,#eeeeee,#f0f0f0);
+	background:-moz-linear-gradient(top,#cccccc,#eeeeee,#f0f0f0);
+	background:-webkit-linear-gradient(top,#cccccc,#eeeeee,#f0f0f0);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee',endColorStr='#f0f0f0')";
+	border-bottom:1px solid #F0F0F0;
+}
+.tablist.silver2gray>li>a[aria-selected="true"]{
+	background:linear-gradient(top,#f0f0f0,#eeeeee,#cccccc);
+	background:-ms-linear-gradient(top,#f0f0f0,#eeeeee,#cccccc);
+	background:-moz-linear-gradient(top,#f0f0f0,#eeeeee,#cccccc);
+	background:-webkit-linear-gradient(top,#f0f0f0,#eeeeee,#cccccc);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee',endColorStr='#f0f0f0')";
+	border-top:1px solid #F0F0F0;
+}
+/* rotate(0deg); */
+.tablist.rotate0{
+	margin-bottom:-1px;
+}
+.tablist.rotate0>li{
+	margin-left:-1px;
+}
+.tablist.rotate0>li:first-child{
+	margin-left:0;
+}
+/* rotate(-90deg) */
+.tablist.rotate-90>li{
+	margin-top:-1px;
+	width:120px;
+	height:120px;
+	transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-ms-filter:progid:DXImageTransform.Microsoft.BasicImage("rotation=2");
+}
+.tablist.rotate-90>li:first-child{
+	margin-top:0;
+}
+.tablist.rotate-90>li>a{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+/* rotate(90deg) */
+.tablist.rotate90>li{
+	margin-top:-1px;
+	width:120px;
+	height:120px;
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-webkit-transform-origin:0 0;
+}
+.tablist.rotate90>li:first-child{
+	margin-top:0;
+}
+.tablist.rotate90>li>a{
+	width:98px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+/* rotate(180deg) */
+.tablist.rotate180{
+	margin-top:-1px;
+}
+.tablist.rotate180>li{
+	margin-left:-1px;
+}
+.tablist.rotate180>li:first-child{
+	margin-left:0;
+}
+.tablist.rotate180>li>a{
+	margin-top:0;
+	border-radius:0 0 4px 4px;
+}
+
+
+.panellist{
+	min-height:460px;
+	border:1px solid #777777;
+	border-radius: 0px 5px 5px 5px;
+	background-color:#F0F0F0;
+	box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
+}

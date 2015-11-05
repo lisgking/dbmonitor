@@ -1,0 +1,49 @@
+<form action="">
+	<table>
+	<tr>
+		<td><label>用户ID</label></td>
+		<td><input type="text" data-role="userId"
+				required="required" maxlength="32" pattern="[A-Za-z]\w*" /></td>
+	</tr>
+	<tr>
+		<td><label>用户名</label></td>
+		<td><input type="text" data-role="userName"
+				required="required" maxlength="32" pattern="[A-Za-z \xc0-\xff\u4e00-\u9fa5]" /></td>
+	</tr>
+	<tr>
+		<td><label>密码</label></td>
+		<td><input type="text" data-role="password" /></td>
+	</tr>
+	<tr>
+		<td><label>确认密码</label></td>
+		<td><input type="text" data-role="password" /></td>
+	</tr>
+	<tr>
+		<td><label>类型</label></td>
+		<td>
+			<select name="" data-role="userStatus">
+				<option value="0">系统用户</option>
+				<option value="1">管理员</option>
+				<option value="2">普通用户</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><label>状态</label></td>
+		<td>
+			<select name="" data-role="userType">
+				<option value="0">已禁用</option>
+				<option value="1">正常</option>
+				<option value="2">已注销</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			<input type="button" value="保存" data-role="toSave" />
+			<input type="button" value="提交" data-role="toSubmit" style="display:none;" />
+		</td>
+	</tr>
+	</table>
+</form>

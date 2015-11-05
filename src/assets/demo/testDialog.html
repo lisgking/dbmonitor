@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Power Center</title>
+  <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../fonts/Font-Awesome-3.2.1/css/font-awesome.css">
+
+  <link rel="stylesheet" type="text/css" href="../styles/theme.css">
+</head>
+<body>
+<div id="test-dom">测试dom用</div>
+<a id="dialog" class="btn btn-default btn-block">普通弹出框</a>
+<a id="iframe-dialog" class="btn btn-default btn-block">iframe弹出框</a>
+<a id="text-dialog" class="btn btn-default btn-block">文本弹出框</a>
+<a id="html-dialog" class="btn btn-default btn-block">html弹出框</a>
+<a id="widget-dialog" class="btn btn-default btn-block">widget弹出框 如：Lpar重命名</a>
+<a id="widget-dialog2" class="btn btn-default btn-block">widget弹出框 如：安装OS向导</a>
+<a id="loading" class="btn btn-default btn-block">loading 请在console调用Dialog.closeLoading()关闭</a>
+<a id="text-loading" class="btn btn-default btn-block">text Loading  请在console调用Dialog.closeLoading()关闭</a>
+<a id="alert" class="btn btn-default btn-block">模拟window.alert</a>
+<a id="confirm" class="btn btn-default btn-block">模拟window.confirm</a>
+
+<script>
+var require={
+  baseUrl:"../scripts",
+  config:{
+    "dojo/css":{
+      baseUrl:"../scripts"
+    },
+    "dojo/nls":{
+      baseUrl:"../scripts",
+      lang:document.documentElement.lang
+    }  
+  },
+  skipDataMain:true
+};
+</script>
+
+<script src="../scripts/require.js"></script>
+<script src="../scripts/jquery.js"></script>
+<script src="../scripts/v8natives.js"></script>
+<script>
+jQuery(function($){
+  require([
+    'ts/util/GUtil',
+    "ts/widgets/CommonGrid"
+  ],function(GUtil, Dialog){
+
+    $('#dialog').click(function(){
+      var d = new Dialog({
+        url: 'http://www.baidu.com',
+        text: '<h1>我是内容</h1>',
+        width: 640,
+        height: 320
+      });
+    });
+
+    $('#iframe-dialog').click(function(){
+      Dialog.create({
+        title: '打开iframe',
+        contentType: 'iframe',
+        url: 'http://www.baidu.com',
+        width: 640,
+        height: 320
+      });
+    });
+    $('#text-dialog').click(function(){
+      Dialog.create({
+        title: '普通文本框',
+        text: '我是普通文本框',
+        width: 640,
+        height: 320
+      });
+    });
+    $('#html-dialog').click(function(){
+      Dialog.create({
+        title: 'html或Dom框',
+        text: $('#test-dom')[0],
+        width: 640,
+        height: 320
+      });
+    });
+    $('#widget-dialog').click(function(){
+      Dialog.create({
+          title: 'Lpar重命名',
+          url: 'ts/common/EditLpar',
+          widgetOpts: {
+              url: 'xcat/XcstLparAction.do?method=rename',
+              data: {},
+          },
+          height: 320
+      });
+    });
+    $('#widget-dialog2').click(function(){
+        Dialog.create({
+          title: 'InstallOSWizard',
+          url: 'ts/common/InstallOSWizard',
+          widgetOpts: {
+            platformId: '',
+            platformPcid: '',
+            platformType: '',
+            // gridWidget: grid
+          },
+          width: 1060,
+          height: 450
+        });
+    });
+    $('#loading').click(function(){
+      Dialog.loading('', '', '', false)
+    });
+    $('#text-loading').click(function(){
+      Dialog.loading('显示文本loading', '', '', false)
+    });
+    $('#alert').click(function(){
+      Dialog.alert('我用alert了');
+    });
+    $('#confirm').click(function(){
+      Dialog.confirm('删除不可恢复？',function(bool){
+        if(bool){
+            alert('我点确定了 执行确定逻辑');
+        }else{
+            alert('我点取消了 执行确定逻辑');
+
+        }
+      });
+    });
+//    var d = new Dialog({contentType: 'iframe', url: 'http://www.baidu.com', width: 640, height: 420});
+
+     //new Dialog({title: '创建VM', url: 'ts/widgets/dialogform/DialogForm', width: 640, height: 320});
+//       Dialog.create({title: '应用安装', url: 'ts/t3/appnav/AppNav', width: 800, height: 500});
+// //    dialog.placeAt($("body"), 'beforeEnd');
+// //    $('body').append(dialog.rootElement).show();
+// 	console.log(dialog);
+  });
+});
+
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,90 @@
+{
+	"multiple":true,
+	"*":{
+		"dataTime":"Date Updated",
+		"entityName":"Entity",
+		"entityPcid":"Entity ID",
+		"entityType":"Entity Type",
+		"errorCode":"Error Code",
+		"errorDesc":"Error Desc",
+		"hostPcid":"Host ID",
+		"logDetail":"Details",
+		"operatioLogId":"Log ID",
+		"operationResult":"Result",
+		"operationTime":"Time",
+		"operationType":"Operation",
+		"operationTypeName":"Operation Name",
+		"packageAppId":"App ID",
+		"platformPcid":"Platform ID",
+		"userId":"Operator ID",
+		"userName":"Operator",
+		
+		"RecentLogs":"Recent Logs"
+	},
+	"LogList":{
+		"UNKNOWN":"Unknown",
+		"DONE":"Done",
+		"FAIL":"Failed",
+		
+		"OS_IMAGE":"OS Image",
+		"OS_IMAGE#UPLOAD":"Upload",
+		"OS_IMAGE#IMPORT":"Import",
+		"OS_IMAGE#DELETE":"Delete",
+		"OS_IMAGE#UPDATE":"Update",
+		
+		"USER":"Account",
+		"USER#ADD":"Create",
+		"USER#EDIT":"Alter Account",
+		"USER#CANCEL":"Delete",
+		"USER#ALTERPASS":"Change Password",
+		"USER#RESETPASS":"Reset Password",
+		
+		"DEPLOY_ENGINE":"Deployment Engine",
+		"DEPLOY_ENGINE#ADD":"Registeration",
+		"DEPLOY_ENGINE#UPDATE":"Update",
+		
+		"CRON_JOB":"Task Schedule",
+		"CRON_JOB#START":"Activate",
+		"CRON_JOB#STOP":"Inactivate",
+		
+		"clear_upload":"Clear uploaded files",
+		
+		"PLATFORM":"Platform",
+		"PLATFORM#REGISTER":"Register",
+		"PLATFORM#RENAME":"Rename",
+		"PLATFORM#REFRESH":"Synchronize",
+		"PLATFORM#DELETE":"Delete",
+		"PLATFORM#START":"Start",
+		
+		"HOST":"Host",
+		"HOST#REGISTER":"Register",
+		"HOST#RENAME":"Rename",
+		"HOST#REFRESH":"Synchronize",
+		"HOST#DELETE":"Delete",
+		"HOST#START":"Start",
+		"HOST#STOP":"Stop",
+		"HOST#UPDATEIP":"Update IP",
+		"HOST#SETUPTRUST":"Setup Trust",
+		"HOST#RESTART":"Restart",
+		"DELETE":"Delete Host",
+		"IMPORT":"Import OSImage",
+		
+		"LPAR":"LPAR",
+		"LPAR#REGISTER":"Register",
+		"LPAR#RENAME":"Rename",
+		"LPAR#DELETE":"Delete",
+		"LPAR#START":"Start",
+		"LPAR#STOP":"Stop",
+		"LPAR#UPDATEIP":"Update IP",
+		"LPAR#SETUPTRUST":"Setup Trust",
+		"LPAR#INSTALLOS":"Install OS",
+		"LPAR#UPDATEOSINFO":"Update OS Info",
+		"LPAR#RESTART":"Restart",
+		"LPAR#CREATE":"Create",
+		"LPAR#OPENCONSOLE":"Open Console",
+		"CONFIGLPAR":"Edit LPAR",
+		
+		"SOFTWARE_INSTALL":"Lpar Install Software",
+		"SOFTWARE_UNINSTALL":"Lpar Unistall Software"
+	}
+}

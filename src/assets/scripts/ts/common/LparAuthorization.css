@@ -1,0 +1,14 @@
+#lparAuthorizantion .LparAuthorization form {
+	overflow-y: auto;
+	height: 320px;
+}
+
+#lparAuthorizantion .LparAuthorization .form-group {
+	margin: 0 0 10px 0;
+	width:100%;
+}
+
+#lparAuthorizantion div.partition {
+	height: 200px;
+	overflow: scroll;
+}

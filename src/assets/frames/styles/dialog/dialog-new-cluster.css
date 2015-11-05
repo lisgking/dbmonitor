@@ -1,0 +1,40 @@
+/*~~~~~~~~~~dialog-steps~~~~~~~~~~*/
+.dialog-new-cluster{
+	
+}
+.dialog-new-cluster .dialog-steps td{
+	width:16.6%;
+}
+.dialog-new-cluster .steps-track{
+	width:630px;
+	margin-left:-315px;
+}
+
+.fieldlist{
+	margin:40px 20px 0;
+	padding:0 10px 10px 10px;
+	border:1px solid #ccc;
+}
+.fieldlist dt{
+	float:left;
+}
+.fieldlist label[for]{
+	display:inline-block;
+	width:110px;
+}
+html[lang="en-US"] .fieldlist label[for]:after{
+	content:":";
+}
+html[lang="zh-CN"] .fieldlist label[for]:after{
+	content:"：";
+}
+.fieldlist dt,
+.fieldlist dd{
+	margin-top:10px;
+}
+.textinput{
+	width:160px;
+}
+.areainput{
+	width:432px;
+}

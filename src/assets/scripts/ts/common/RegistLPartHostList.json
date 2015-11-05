@@ -1,0 +1,145 @@
+{
+    "hostinfo": [
+        {
+            "env": "0",
+            "existLpar": "0",
+            "hostPositionNumber": "1",
+            "ip": "192.168.0.31",
+            "lic": "472B6D3EBC1C62A2CA94D6B7C6A161384AD5B9C95B0DD7B4DB0B2077E380E2129D7A24499363677DED399377EC66C909F492DFE04F385C07D8354C71FB7AC471BBA3AB544760CF7A1203F484275672BAEE923A3300E855F4CDA5034CB5FA6228",
+            "licIsValid": "0",
+            "lpars": [
+                {
+                    "bootMode": "1",
+                    "environment": "0",
+                    "ipConfigPO": {
+                        "gateway": "172.30.126.12",
+                        "ip": "172.30.126.236",
+                        "vlan": 0
+                    },
+                    "loginPassword": "tebe",
+                    "lparName": "SN060558A",
+                    "nameAlias": "SN060558A1",
+                    "storageId": "1"
+                },
+                {
+                    "bootMode": "1",
+                    "environment": "0",
+                    "ipConfigPO": {
+                        "gateway": "172.30.126.123",
+                        "ip": "172.30.126.2362",
+                        "vlan": 0
+                    },
+                    "loginPassword": "tebe",
+                    "lparName": "SN060558A2",
+                    "nameAlias": "SN060558A12",
+                    "storageId": "1"
+                }
+            ],
+            "model": "8246-L2D",
+            "name": "Server-8246-L2D-SN060558A",
+            "nameAlias": "Server-8246-L2D-SN060558A",
+            "password": "admin",
+            "rackNumber": "8",
+            "registerLpar": "0",
+            "registerSuccess": "0",
+            "registered": "0",
+            "serNo": "060558A"
+        },
+        {
+            "env": "0",
+            "existLpar": "0",
+            "hostPositionNumber": "1",
+            "ip": "192.168.0.32",
+            "lic": "472B6D3EBC1C62A2CA94D6B7C6A161384AD5B9C95B0DD7B4DB0B2077E380E2129D7A24499363677D851FA4AAE73F8240F492DFE04F385C07D8354C71FB7AC471BBA3AB544760CF7A1203F484275672BAEE923A3300E855F4CDA5034CB5FA6228",
+            "licIsValid": "0",
+            "lpars": [
+                {
+                    "bootMode": "1",
+                    "environment": "0",
+                    "ipConfigPO": {
+                        "gateway": "172.30.126.12",
+                        "ip": "172.30.126.237",
+                        "vlan": 0
+                    },
+                    "loginPassword": "tebe",
+                    "lparName": "SN060568A",
+                    "nameAlias": "SN060568A",
+                    "storageId": "1"
+                }
+            ],
+            "model": "8246-L2D",
+            "name": "Server-8246-L2D-SN060568A",
+            "nameAlias": "Server-8246-L2D-SN060568A",
+            "password": "admin",
+            "rackNumber": "6",
+            "registerLpar": "0",
+            "registerSuccess": "0",
+            "registered": "0",
+            "serNo": "060568A"
+        },
+        {
+            "env": "0",
+            "existLpar": "0",
+            "hostPositionNumber": "2",
+            "ip": "192.168.0.133",
+            "lic": "472B6D3EBC1C62A29DDF6CCE3620C751076D674E43408CF96D9EA6674FB7CD93EE3A83F7C068E523168244BC37FF673188DB235AE2C4F56F3BFB0F533DD8C7C44DD7A41906A9BE5F44CACABFE671F5254AB555D417C7B03010C429769DE14FD1CBDCE7E7764FB28E",
+            "licIsValid": "0",
+            "lpars": [
+                {
+                    "bootMode": "1",
+                    "environment": "0",
+                    "ipConfigPO": {
+                        "gateway": "172.30.126.12",
+                        "ip": "172.30.126.238",
+                        "vlan": 0
+                    },
+                    "loginPassword": "tebe",
+                    "lparName": "SN06056BA",
+                    "nameAlias": "SN06056BA",
+                    "storageId": "2"
+                }
+            ],
+            "model": "8246-L2D",
+            "name": "Server-8246-L2D-SN06056BA",
+            "nameAlias": "Server-8246-L2D-SN06056BA",
+            "password": "admin",
+            "rackNumber": "6",
+            "registerLpar": "0",
+            "registerSuccess": "0",
+            "registered": "0",
+            "serNo": "06056BA"
+        },
+        {
+            "env": "0",
+            "existLpar": "0",
+            "hostPositionNumber": "3",
+            "ip": "192.168.0.135",
+            "lic": "472B6D3EBC1C62A2CA94D6B7C6A161384AD5B9C95B0DD7B4DB0B2077E380E2129D7A24499363677DD6C06577297C9066F492DFE04F385C07D8354C71FB7AC4716A8783BBE508F1F61203F484275672BAEE923A3300E855F420D495612E36F257",
+            "licIsValid": "0",
+            "lpars": [
+                {
+                    "bootMode": "1",
+                    "environment": "0",
+                    "ipConfigPO": {
+                        "gateway": "172.30.126.12",
+                        "ip": "172.30.126.239",
+                        "vlan": 0
+                    },
+                    "loginPassword": "tebe",
+                    "lparName": "SN060543A",
+                    "nameAlias": "SN060543A",
+                    "storageId": "3"
+                }
+            ],
+            "model": "8246-L2D",
+            "name": "Server-8246-L2D-SN060543A",
+            "nameAlias": "Server-8246-L2D-SN060543A",
+            "password": "admin",
+            "rackNumber": "8",
+            "registerLpar": "0",
+            "registerSuccess": "0",
+            "registered": "0",
+            "serNo": "060543A"
+        }
+    ]
+}

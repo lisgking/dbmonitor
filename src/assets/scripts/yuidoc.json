@@ -1,0 +1,19 @@
+{
+	"name": "The JSM API",
+	"description": "API for JSM polyfills widgets and utilities",
+	"version": "0.0.1",
+	"url": "http://172.24.18.161/jsm/assets/apidocs",
+	"options": {
+		"outdir": "../../apidocs",
+		"exclude":"dojo,fileupload,jquery",
+		"paths":[
+			"thirdpart",
+			"jsm/util",
+			"jsm/misc",
+			"jsm/shims",
+			"ts/util",
+			"ts/events",
+			"ts/widgets"
+		]
+	}
+}

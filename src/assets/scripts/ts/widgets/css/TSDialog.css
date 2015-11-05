@@ -1,0 +1,20 @@
+.-ts-dialog-head{
+	background-color: #F7F7F7;
+}
+.-ts-dialog-close{
+	position:absolute;
+	right:-16px;
+	top:-16px;
+	border:none;
+	border-radius:18px;
+	width: 36px;
+	height: 36px;
+	text-indent:-100px;
+	background:url("icons/close.png") no-repeat center center;
+}
+.-ts-dialog-body{
+	
+}
+.-ts-dialog-foot{
+	background-color: #F7F7F7;
+}

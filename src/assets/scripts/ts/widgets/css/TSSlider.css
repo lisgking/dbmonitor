@@ -1,0 +1,122 @@
+.progress {
+	height: 12px;
+	background: #ebedef;
+	border-radius: 32px;
+	box-shadow: none;
+}
+.progress-bar {
+	line-height: 12px;
+	background: #1abc9c;
+	box-shadow: none;
+}
+.progress-bar-success {
+	background-color: #2ecc71;
+}
+.progress-bar-warning {
+	background-color: #f1c40f;
+}
+.progress-bar-danger {
+	background-color: #e74c3c;
+}
+.progress-bar-info {
+	background-color: #3498db;
+}
+.ui-slider {
+	position: relative;
+	height: 12px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	background: #ebedef;
+	border-radius: 32px;
+	box-shadow: none;
+}
+.ui-slider-handle {
+	position: absolute;
+	z-index: 11;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	background-color: #16a085;
+	border-radius: 50%;
+	-webkit-transition: background .25s;
+	transition: background .25s;
+}
+
+.ui-slider-handle.warning {
+	background-color: #D35400;
+}
+
+.ui-slider-handle.danger {
+	background-color: #E74C3C;
+}
+.ui-slider-handle:hover, .ui-slider-handle:focus {
+	background-color: #48c9b0;
+	outline: none;
+}
+.ui-slider-handle:active {
+	background-color: #16a085;
+}
+.ui-slider-range {
+	position: absolute;
+	z-index: 10;
+	display: block;
+	height: 100%;
+	background-color: #1abc9c;
+}
+
+.ui-slider-segment {
+	width: 6px;
+	height: 6px;
+	background-color: #d9dbdd;
+	border-radius: 50%;
+}
+.ui-slider-value {
+	float: right;
+	margin-top: 12px;
+	font-size: 13px;
+}
+.ui-slider-value.first {
+	float: left;
+	clear: left;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -3px;
+	//margin-left: -9px;	// 解决向下和向下滚轮时步长不一致的问题
+}
+.ui-slider-horizontal .ui-slider-handle[style*="100"] {
+	//margin-left: -15px;
+}
+.ui-slider-horizontal .ui-slider-range {
+	border-radius: 30px 0 0 30px;
+}
+
+.ui-slider-range.warning {
+	z-index: 9;
+	background-color: #E67E22;
+}
+.ui-slider-range.danger {
+	z-index: 8;
+	border-radius: 32px;
+	background-color: #C0392B;
+}
+.ui-slider-horizontal .ui-slider-segment {
+	float: left;
+	margin: 3px -6px 0 0;
+}
+.ui-slider-vertical {
+	width: 12px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	top: auto;
+	margin-bottom: -11px;
+	margin-left: -3px;
+}
+.ui-slider-vertical .ui-slider-range {
+	bottom: 0;
+	width: 100%;
+	border-radius: 0 0 30px 30px;
+}
+.ui-slider-vertical .ui-slider-segment {
+	position: absolute;
+	right: 3px;
+}

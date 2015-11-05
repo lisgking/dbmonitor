@@ -1,0 +1,12 @@
+{
+	"Pattern":"Pattern(e.g. bigdata###)",
+	"Pattern_help":"Each # in first matched group of continuous #s, represents a digit number, and will be replaced with digit number. the group will be left paded with 0 to specified length",
+	"Pattern_message":"Pattern may only consisits of letters digits underscore comma or #",
+	"Help":"?",
+	"Start":"From",
+	"End":"To",
+	"Preview":"Preview",
+	"Fill":"Fill",
+	"Close":"Close",
+	"Reset":"Clear All Modifications / Revert to Original State"
+}

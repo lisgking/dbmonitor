@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<title>Test</title>
+	<base href="../../" /><!--[if IE]>
+	<script>(function(b){if(b)b.href=b.href;}(document.getElementsByTagName("base")[0]));</script><![endif]-->
+	<link rel="stylesheet" href="assets/styles/qunit.css" />
+</head>
+<body>
+
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+
+<script>
+var require={
+	baseUrl:"assets/scripts",
+	config:{
+		"dojo/nls":{
+			lang:document.documentElement.lang
+		}
+	},
+	skipDataMain:true
+};
+</script>
+<script src="assets/scripts/jsm/util/HttpRequest.js"></script>
+<script>
+var request=new HttpRequest(location);
+document.title=request.getParameter("title")||document.title;
+</script><!--[if IE]>
+<script src="assets/scripts/require.js"></script><![endif]--><!--[if !IE]><!-->
+<script src="assets/scripts/alameda.js"></script><!--<![endif]-->
+<script src="assets/scripts/jquery.js"></script>
+<script src="assets/scripts/v8natives.js"></script>
+<script src="assets/scripts/qunit.js"></script>
+<script src="assets/tests/qunit-callbacks.js"></script>
+<script>
+require([
+	"jquery",
+	"dojo/json!../tests/manifest.json"
+],function(jQuery,manifest){
+	require.config(manifest);
+	var main=request.getParameter("main");
+	if(!main){return;}
+	requirejs([main]);
+});
+</script>
+</body>
+</html>

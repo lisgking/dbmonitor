@@ -1,0 +1,32 @@
+/*reset*/
+/*
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,form,input,button,select,textarea,fieldset,legend{margin:0;}
+body{font:12px/1.5 Arial,SimSun;color:#333333;}
+iframe,img{border:none;padding:0;line-height:1em;}
+h1,h2,h3{line-height:1em;}
+h1,h2,h3,h4,h5,h6,caption,th,strong{font-style:normal;font-weight:normal;}
+h4,h5,h6,caption{font-size:1em;}
+table{border-collapse:collapse;border-spacing:0px;empty-cells:show;}
+ul,ol,nav{list-style-type:none;padding-left:0;}
+a{text-decoration:none;color:#333333;}
+a[href^="#"]:hover{text-decoration:none;}
+input,select,option,textarea,button,label{font:12px/1.5 Arial,SimSun;}
+*/
+body{
+	margin: 0;
+	color:#444444;
+	font:12px/12px Arial,Consolas;
+}
+/*aria*/
+[aria-hidden="true"]{display:none;}
+[hidden]{display:none;}
+
+/*classes*/
+.hidden{display:none;}
+.fl{float:left;}
+.fr{float:right;}
+.cl{clear:left;}
+.cr{clear:right;}
+.cb{clear:both;}
+.ca:after{content:"";display:block;clear:both;}
+.ib{display:inline-block;}

@@ -1,0 +1,14 @@
+{
+	"validateText" : "输入不合法",
+	"validateFunText" : "自定义输入不合法",
+	"emptyText" : "请输入",
+	"emptyMsg" : "不能为空",
+
+	"Only for the letters" : "只能为字母",
+	"Only for the Numbers" : "只能为数字",
+	"For the combination of letters and Numbers only" : "只能为字母和数字的组合",
+	"Must be a valid email" : "必须为一个合法的邮箱",
+	"Must be a valid url" : "必须为一个合法的url",
+	"Must be a legitimate IP address" : "必须为合法的IP地址",
+	"Must be legal name" : "必须为合法的名称"
+}

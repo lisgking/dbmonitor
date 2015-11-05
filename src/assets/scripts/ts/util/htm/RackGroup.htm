@@ -1,0 +1,23 @@
+<div>
+	<div>
+		<label for="">Num of Racks</label>
+		<input type="number" name="numOfRacks" value="2" min="1" max="255" step="1" required data-role="cols" />
+		<label for="">Num of Floors</label>
+		<input type="number" name="numOfFloors" value="8" min="1" max="255" step="1" required data-role="rows" />
+	</div>
+	<div>
+		<ul class="draggable-list" data-role="list"></ul>
+	</div>
+	<table class="racks" data-rows="2" data-role="table">
+		<thead>
+			<tr>
+				<th hidden><input type="text" name="rackName" placeholder="rack name" /></th>
+			</tr>
+		</thead>
+		<tbody data-role="tbody">
+			<tr>
+				<td hidden><input type="text" name="hostName" placeholder="host name" readonly /></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

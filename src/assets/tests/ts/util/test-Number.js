@@ -1,0 +1,22 @@
+require([],function(){
+	QUnit.test("add",function(assert){
+		assert.equal(1+2,3,"1+2===3");
+		assert.equal(0.1+0.2,0.3,"0.1+0.2===0.3");
+		assert.equal(0+0,0,"0+0===0");
+	});
+	QUnit.test("subtract",function(assert){
+		assert.equal(3-1,2,"3-1==2");
+		assert.equal(0.3-0.1,0.2,"0.3-0.1===0.2");
+		assert.equal(0-0,0,"0-0===0");
+	});
+	QUnit.test("multiply",function(assert){
+		assert.equal(1*2,2,"1*2===2");
+		assert.equal(0.1*0.2,0.02,"0.1*0.2===0.02");
+		assert.equal(0*-0,0,"0*-0===0");
+	});
+	QUnit.test("devide",function(assert){
+		assert.equal(1/2,0.5,"1/2===0.5");
+		assert.equal(0.1/0.2,0.5,"0.1/0.2===0.5");
+		assert.ok(isNaN(0/0),"0/0 isNaN");
+	});
+});

@@ -1,0 +1,35 @@
+/*~~~~~~~~~~dialog-body-datagrid~~~~~~~~~~*/
+.datagrid{
+	width:100%;
+	border:1px solid #cccccc;
+	border-radius:10px;
+}
+.datagrid th,.datagrid td{
+	padding:0 5px;
+	line-height:24px;
+}
+.datagrid th{
+	text-align:left;
+	background-color:#ccc;
+	border-top:2px groove #fff;
+	border-left:2px groove #eee;
+	border-bottom:1px solid #999;
+}
+.datagrid th:first-child{
+	border-left:none;
+}
+.datagrid td{
+	border-bottom:1px solid #cccccc;
+}
+.datagrid td input{
+	vertical-align:middle;
+}
+.datagrid tr:nth-child(odd){
+	background-color:#ececec;
+}
+.datagrid tr:nth-child(even){
+	background-color:#fff;
+}
+.datagrid tr.selected{
+	background-color:#69c;
+}

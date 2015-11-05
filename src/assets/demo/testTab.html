@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Power Center</title>
+  <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../fonts/Font-Awesome-3.2.1/css/font-awesome.css">
+
+  <link rel="stylesheet" type="text/css" href="../styles/theme.css">
+</head>
+<body>
+<div id="test"></div>
+
+<script>
+var require={
+  baseUrl:"../scripts",
+  config:{
+    "dojo/css":{
+      baseUrl:"../scripts"
+    },
+    "dojo/nls":{
+      baseUrl:"../scripts",
+      lang:document.documentElement.lang
+    }  
+  },
+  skipDataMain:true
+};
+</script>
+
+<script src="../scripts/require.js"></script>
+<script src="../scripts/jquery.js"></script>
+<script src="../scripts/v8natives.js"></script>
+<script>
+  require([
+    'ts/util/GUtil',
+  ],function(GUtil){
+    require([
+      'ts/widgets/CommonTabs',
+      'ts/common/PlatformList',
+      'ts/common/HostList'
+    ],function(CommonTabs, PlatformList){ 
+
+
+    var tab = new CommonTabs({
+      clickTab: function(itemData){//点击某个选项卡回调函数
+       var $tabItem = $('#' + itemData.id);
+        if(itemData.name === 'PlatformList'){//根据name找到对应的widget,并放到此panel
+            var platformList = new PlatformList({url: 'platformList.json'});
+            platformList.placeAt($tabItem);
+        }else if(itemData.name === 'HostList'){
+            $tabItem.html('<h1>测试tabs</h1>');
+        }
+    }});
+
+    tab.loadData([//加载选项卡个数
+        {title: 'PlatformList', name: 'PlatformList'},
+        {title: 'hostList', name: 'HostList'}
+    ]);
+
+    tab.placeAt($('#test'), 'append');      
+   
+  });
+});
+
+</script>
+</body>
+</html>
+
+

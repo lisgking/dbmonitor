@@ -1,0 +1,26 @@
+.-ts-basic-overlay{
+	z-index:10;
+	background-color:rgba(0,0,0,0.398);
+}
+.-ts-basic-dialog{
+	position:absolute;
+	width:798px;
+	height:518px;
+	margin-left:-400px;
+	margin-top:-260px;
+	left:50%;
+	top:50%;
+	border:1px solid #fff;
+	border-radius:10px;
+	background:#ccc;
+}
+.-ts-basic-dialog>.-ts-basic-close{
+	position:absolute;
+	right:-10px;
+	top:-10px;
+	border:none;
+	border-radius:12px;
+	width: 24px;
+	height: 24px;
+	text-indent:-100px;
+}

@@ -1,0 +1,29 @@
+{
+	"emptyDirectoryIgnored":"忽略空文件夹：`$0`",
+	"fileIsBeingUploading":"正在上传文件，关闭此页面将会中断上传，建议等待上传完成后再关闭此页面",
+	"fileSizeOverflowInFlash":"Flash最大只能上传2G的文件：$name 大小：$size",
+	"failedToCreateTask":"创建上传任务失败。NO_TOKEN_FOUND 状态码:$1",
+	"errorToCreateTask":"创建上传任务失败。NETWORK_ERROR 状态码:$0",
+	"fileNumOverflowInTask":"当前最大支持上传文件数为：$num,实际选择文件数为：$length",
+	
+	"onSelect":"已选$length个文件",
+	"onFileCountExceed":"文件数量被限制为$limited个, 但当前已选择$selected个",
+	"onMaxSizeExceed":"文件大小被制为$limited, 但当前已选文件\"$name\"大小为$size",
+	"onExtNameMismatch":"文件扩展名被限制为$filters.但文件\"$name\"扩展名不符合要求",
+	"onCancel":"文件\"$name\"已被取消上传",
+	"onStop":"停止上传",
+	"onCancelAll":"$0 个文件已被取消上传",
+	"onComplete":"文件\"$name\"上传完成，文件大小$size",
+	"onQueueComplete":"所有文件全部上传完成",
+	"onUploadError":"上传时发生错误. 状态码：$status, 消息：$msg",
+	
+	"delete": "删除",
+	"speed": "速度",
+	"uploaded": "已上传",
+	"remainingTime": "剩余时间",
+	"overallProgress": "总进度",
+	"totalUploaded":"总上传大小",
+	"totalFileSize": "总文件大小",
+	"chooseFile":"选择文件",
+	"dropFileHere":" or 将文件拖放到此处"
+}

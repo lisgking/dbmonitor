@@ -1,0 +1,29 @@
+<ul data-bind="foreach: nodeList" class="ts-tree" style="height:90%">
+	<li data-bind="" class="level0" tabindex="0" hidefocus="true" treenode="">
+		<span data-bind="click: $root.switchNode, attr:{class: $root.switchClsName($data)}, style: {visibility: $data.parent() ? 'visible' : 'hidden'}" class="button level0 switch bottom_close"></span>
+		<a data-bind="click: $root.clickNode, event:{dblclick: $root.dblclickNode}, css: $root.nodeClsName($data)" class="level0">
+			<span data-bind="attr:{class: $root.iconClsName($data)}" class="button default-icon"> </span>
+			<span data-bind="text: name" ></span>
+		</a>
+		<!-- ko template: {name: 'tree-tmpl', data: $data} -->
+        <!-- /ko -->
+	</li>
+
+<script id="tree-tmpl" type="text/template">
+
+    <!-- ko if:  $data.children() && !!$data.children().length -->
+        <ul data-bind="foreach: $data.children, visible: $data.open" class="">
+			<li iclass="level1">
+				<span  data-bind="click: $root.switchNode, attr:{class: $root.switchClsName($data)}, style: {visibility: $data.parent() ? 'visible' : 'hidden'}" class="button level1 switch center_open"></span>
+				<a data-bind="click: $root.clickNode, event:{dblclick: $root.dblclickNode}, css: $root.nodeClsName($data)" class="level1">
+					<span data-bind="css: iconClsName" class="button default-icon" ></span>
+					<span data-bind="text: name"></span>
+				</a>
+			</li>
+			<!-- ko template: {name: 'tree-tmpl', data: $data} -->
+	        <!-- /ko -->
+		</ul>
+    <!-- /ko -->
+   
+</script>
+</ul>

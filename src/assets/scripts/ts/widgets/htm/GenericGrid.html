@@ -1,0 +1,90 @@
+<div>
+    <!-- ko if: $data.gridSearchCondition && $data.gridSearchCondition().length > 0 -->
+    <div data-bind="" class="panel panel-default">
+        <div class="panel-heading">${searchCond}</div>
+        <div class="panel-body">
+            <form class="form-horizontal form-second-col" role="form">
+                <!-- ko foreach: $data.gridSearchCondition -->
+                    <!-- ko if: type === 'select' -->
+                    <div data-bind="attr: {class: inputName ? 'form-group form-select-input' : 'form-group'}, style: {width: wrapWidth}" class="form-group">
+                        <label data-bind="text: text" class="col-sm-3 control-label"></label>
+                        <div data-bind="attr:{class: inputName ? 'col-sm-3' : 'col-sm-6'}" class="col-sm-3">
+                            <select data-bind="options: options, optionsText: 'text', optionsValue: 'val', selectedOptions: selectedOption, event: {change: $data.changeCB}, attr:{class: 'form-control ' + $data.clsName()}, disable: $data.clsName().indexOf('disabled') == -1 ? false : true" class="form-control">
+                            </select>
+                        </div>
+                        <!-- ko if: inputName -->
+                        <div class="col-sm-3">
+                            <input data-bind="value: $data[inputName], event:{keydown: $root.search}" type="text" name="" id="" class="form-control">
+                        </div>
+                        <!-- /ko -->
+
+                        <!-- ko template: {name: 'grid-search-btn-tmpl'} -->
+                        <!-- /ko -->
+
+                    </div>
+                    <!-- /ko -->
+                    <!-- ko if: type === 'input' -->
+                    <div data-bind="style: {width: wrapWidth}" class="form-group">
+                        <label data-bind="text: text" class="col-sm-3 control-label"></label>
+                        <div class="col-sm-6">
+                            <input data-bind="value: $data[$data.aliasName || name], attr:{class: 'form-control ' + $data.clsName()}, disable: $data.clsName().indexOf('disabled') == -1 ? false : true, event:{keydown: $root.search}" type="text" class="form-control">
+                        </div>
+                        <!-- ko template: {name: 'grid-search-btn-tmpl'} -->
+                        <!-- /ko -->
+
+                    </div>
+                    <!-- /ko -->
+                    <!-- ko if: type === 'checkbox' -->
+                    <div data-bind="style: {width: wrapWidth}" class="form-group">
+                        <label data-bind="text: text" class="col-sm-3 control-label"></label>
+                        <div class="col-sm-8">
+                            <!-- ko foreach: data -->
+                            <label data-bind="event: {mouseup: $parent.changeCB}" class="checkbox-inline">
+                                <input data-bind="value: val, checked: checked, disable: $parent.clsName().indexOf('disabled') == -1 ? false : true" type="checkbox" name=""> <span data-bind="text: text"></span>
+                            </label>
+                            <!-- /ko -->
+                        </div>
+                        <!-- ko template: {name: 'grid-search-btn-tmpl'} -->
+                        <!-- /ko -->
+
+                    </div>
+                    <!-- /ko -->
+                    <!-- ko if: type === 'button' -->
+                    <div data-bind="style: {width: wrapWidth}" class="form-group">
+                        <label class="col-sm-3 control-label"></label>
+                        <div class="col-sm-2">
+                            <button type="button" class="btn btn-default"><i data-bind="text: text, click: clickCB, attr: {class: iconClsName}" class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                        <!-- ko template: {name: 'grid-search-btn-tmpl'} -->
+                        <!-- /ko -->
+
+                    </div>
+                    <!-- /ko -->
+                <!-- /ko -->
+
+            </form>
+        </div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: $data.gridActions && $data.gridActions().length -->
+    <div data-bind="foreach: $data.gridActions" class="grid-actions">
+        <button type="button" data-bind="click: $parent.clickActionsItemCallback, attr:{class: 'btn btn-default ' + $data.clsName()}" class="btn btn-default"><i data-bind="attr:{class: iconClsName}"></i><span data-bind="text: text"></span></button>
+    </div>
+    <!-- /ko -->
+    <div data-bind="koGrid: gridOptions" class="gridStyle"></div>
+
+    <script id="grid-search-btn-tmpl" type="text/template">
+
+        <!-- ko if: $root.isCustomSearch() && $data.search -->
+            <div class="col-sm-1">
+                <button data-bind="click: $data.search.clickCB, attr:{class: 'btn btn-default ' + $data.clsName()}" type="button" class="btn btn-default"><i class="glyphicon glyphicon-search"></i><span data-bind="text: $data.search.text"></span></button>
+            </div>
+        <!-- /ko -->
+        <!-- ko if: ($index() === ($root.gridSearchCondition().length - 1) && $root.isCustomSearch() === false) -->
+        <div class="col-sm-1">
+            <button data-bind="click: $root.clickSearchBtnCallback, attr:{class: 'btn btn-default ' + $data.clsName()}" type="button" class="btn btn-default"><i class="glyphicon glyphicon-search"></i>${search}</button>
+        </div>
+        <!-- /ko -->
+        
+    </script>
+</div>

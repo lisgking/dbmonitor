@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/global.css" />
+	<link rel="stylesheet" href="styles/dialog/dialog.css" />
+	<link rel="stylesheet" href="styles/dialog/dialog-install-component.css" />
+</head>
+<body>
+	<div class="dialog-install-component">
+		<div class="dialog-head">
+			<h2>Install new components</h2>
+		</div>
+		<div class="dialog-body">
+			<div class="dialog-steps">
+				<hr class="steps-track" />
+				<table>
+					<thead>
+						<tr class="step-names">
+							<td class="current">Package</td>
+							<td>Tepology</td>
+							<td>Configuration</td>
+							<td>Deploy</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="step-signs">
+							<td class="current"><span></span></td>
+							<td><span></span></td>
+							<td><span></span></td>
+							<td><span></span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="dialog-stage">
+				<div class="step-contents">
+					<div class="current">Content 1</div>
+					<div>Content 2</div>
+					<div>Content 3</div>
+					<div>Content 4</div>
+				</div>
+			</div>
+		</div>
+		<div class="dialog-foot clear-after">
+			<div class="button-group">
+				<input type="button" value="Cancel" id="btn_cancel" />
+				<input type="button" value="Previous" id="btn_prev" disabled="disabled" />
+				<input type="button" value="Next" id="btn_next" />
+				<input type="button" value="Submit" id="btn_submit" class="hidden" />
+			</div>
+		</div>
+	</div>
+	<script src="../scripts/jquery.js"></script>
+	<script src="scripts/jquery/steps.js"></script>
+	<script src="scripts/jquery/dialog-install-component.js"></script>
+</body>
+</html>

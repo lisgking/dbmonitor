@@ -1,0 +1,33 @@
+.-ts-form-grid{
+	width:100%;
+}
+.-ts-form-grid td{
+	padding:5px 0;
+}
+.-ts-form-grid[data-column-count="2"] td:first-child{
+	vertical-align:top;
+	width:15%;
+}
+.-ts-form-grid[data-column-count="3"] td:first-child{
+	vertical-align:top;
+	width:25%;
+}
+.-ts-form-grid[data-column-count="3"] td:last-child{
+	vertical-align:text-top;
+	width:25%;
+}
+.-ts-form-text,
+.-ts-form-textarea{
+	margin:0;
+	padding:4px;
+	border:1px solid #a9a9a9;
+	border-radius:2px;
+}
+.-ts-form-textarea{
+	resize:vertical;
+	overflow:auto;
+	width:350px;
+	height:4em;
+	max-width:365px;
+	max-height:8em;
+}

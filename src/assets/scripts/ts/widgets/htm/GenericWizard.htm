@@ -1,0 +1,28 @@
+<div id="GenericWizard" class="">
+    <div class="wizard">
+        <ul class="steps list-inline" style="margin-left: 0">
+        </ul>
+    </div>
+    <div class="step-content">
+    </div>
+    <div class="modal-footer step_modal_footer step-btns">
+        <button type="button" class="btn btn-default prev-btn" disabled=""><i class="glyphicon glyphicon-arrow-left"></i>${previous}</button>
+        <button type="button" class="btn btn-default next-btn">${next}<i class="glyphicon glyphicon-arrow-right"></i></button>
+        <button type="button" class="btn btn-default cancel-btn">${cancel}</button>
+    </div>
+
+    <script class="steps-templ" type="text/template">
+        <li data-target="" class="complete"><span class="badge">#{num}</span><span class="title">#{title}</span><span class="chevron"></span></li>
+    </script>
+    <script class="step-content-templ" type="text/template">
+        <div class="step-pane"></div>
+    </script>
+    <script class="step-btn-templ" type="text/template">
+        <button type="button" class="btn btn-default #{clsName}">#{text}</button>
+    </script>
+    <script class="step-loading-templ" type="text/template">
+        <div class="setp-loading">
+            <div>${please later in the request}</div>
+        </div>
+    </script>
+</div>

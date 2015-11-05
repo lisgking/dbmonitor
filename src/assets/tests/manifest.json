@@ -1,0 +1,9 @@
+{
+	"packages":[
+		{"name":"test","location":"../tests"}
+	],
+	"tests":[
+		{"title":"Number","main":"test/ts/util/test-Number"},
+		{"title":"HTMLBundleMap","main":"test/ts/util/test-HTMLBundleMap"}
+	]
+}

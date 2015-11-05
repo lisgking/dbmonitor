@@ -1,0 +1,54 @@
+<div id="PartitionInfo" class="PartitionInfo">
+	<form class="form-horizontal" data-role="form">
+		<div class=form-group>
+			<label class="col-sm-3 control-label">${fileSystemPartition}</label>
+			<div class="col-sm-5">
+				<select class="form-control" data-role="fileSystemPartition">
+					<option value="PPC PReP Boot">PPC PReP Boot</option>
+					<option value="ext4" selected="selected">ext4</option>
+					<option value="swap">swap</option>
+				</select>
+			</div>
+			<div class="col-sm-4">
+				<p data-role="fileSystemError"
+					class="form-control-static error-message" style="display: none;"></p>
+			</div>
+		</div>
+		<div class=form-group>
+			<label class="col-sm-3 control-label">${mountDirectory}</label>
+			<div class="col-sm-5">
+				<input data-role="mountDirectory" maxlength="50"
+					list="mountDirectorys" class="form-control" />
+				<datalist id="mountDirectorys">
+					<option value="/">
+					<option value="/boot">
+					<option value="/var">
+					<option value="/tmp">
+					<option value="/usr">
+					<option value="/opt">
+				</datalist>
+			</div>
+			<div class="col-sm-4">
+				<p data-role="mountDirError"
+					class="form-control-static error-message" style="display: none;"></p>
+			</div>
+		</div>
+		<div class=form-group>
+			<label class="col-sm-3 control-label" style="padding-left:20px;text-align:left;"><input name="isfixed" value="1" type="radio" checked="checked">&nbsp;${fixedSize}(MB)</label>
+			<div class="col-sm-5">
+				<input data-role="diskSize" type="text" value="8" class="form-control" >
+			</div>
+			<div class="col-sm-4">
+				<p data-role="partSizeError"
+					class="form-control-static error-message" style="display: none;"></p>
+			</div>
+		</div>
+		<div class=form-group>
+			<label class="col-sm-12 control-label" style="padding-left:20px;text-align:left;"><input name="isfixed" value="0" type="radio">&nbsp;${fillAllSize}</label>
+		</div>
+		<div class="modal-footer">
+			<button data-role="save" type="button" class="btn btn-primary">${submit}</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">${cancel}</button>
+		</div>
+	</form>
+</div>

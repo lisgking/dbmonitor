@@ -1,0 +1,47 @@
+
+<div id="loginDialog" class="login-wrapper png-bg">
+    <header class="pd-header" >
+        <div class="pd-logo"> <img src="assets/images/logo.png" alt="XEAP"> </div>
+    </header>
+    <div class="login-content">
+       <div class="login-inner">
+        <form>
+            <div class="text-title">
+                login 
+              <p class="language-select">   
+                <select name="language" data-bind="value: lang"
+                    class="select-yuyan" data-role="lang" placeholder="${language}">
+                </select>
+              </p>
+            </div>
+            <div class="pull-warn" data-bind="validationMessage: username"></div>
+            <div class="text-username">
+                <div class="usernameinner">
+                <input data-bind="value: username" type="text" name="uid"
+                    class="text-input" data-role="uid" value="" placeholder="${userId}"
+                    required />
+                </div>
+            </div>
+            <div class="pull-warn" data-bind="validationMessage: userpass"></div>
+            <div class="text-password">
+                <div class="passwordinner">
+                <input data-bind="value: userpass" type="password" name="pwd"
+                    class="text-input" data-role="pwd" value=""
+                    placeholder="${password}" required />
+                </div>
+            </div>
+            <input data-bind="click: login" data-role="login" type="button"
+                    value="${Login}" class="button" />
+            <div class="text-warn">
+            <div class="checker">
+                <span data-role="checkedIcon">
+                    <input type="checkbox" name="rememberMe" data-role="rem">
+                </span>
+            </div>
+            <span>${rememberMe}</span>
+            <span data-role="return-message" class="return-message"></span>
+            </div>
+        </form>
+     </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+{
+	"cacheBaseUrl":"./services",
+	"networkBaseUrl":".",
+	"cache":{
+		
+	},
+	"network":{
+		"POST/os-image":"/OSImageAction.do",
+		"DELETE/os-image":"/OSImageAction.do",
+		"PUT/os-image":"/OSImageAction.do",
+		"GET/os-image":"/OSImageAction.do",
+		"GET/os-image-list":"/OSImageAction.do",
+		
+		"GET/os-type-list":"/SystemCodeAction.do",
+		"GET/os-version-list":"/SystemCodeAction.do",
+		
+		"GET/account-list":"/UserAction.do",
+		"GET/log-account-list":"/UserAction.do",
+		"GET/account":"/UserAction.do",
+		"POST/account":"/UserAction.do",
+		"DELETE/account":"/UserAction.do",
+		"PUT/account":"/UserAction.do",
+		
+		"POST/engine":"/DeployEngineAction.do",
+		"GET/engine":"/DeployEngineAction.do",
+		"GET/engine-list":"/DeployEngineAction.do",
+		"PUT/engine":"/DeployEngineAction.do",
+		
+		"GET/log-list":"/LogAction.do",
+		"GET/task-list":"/TaskAction.do",
+		
+		"GET/schedule-list":"/SchedulesAction.do",
+		"POST/schedule":"/SchedulesAction.do",
+		"PUT/schedule":"/SchedulesAction.do",
+		"DELETE/schedule":"/SchedulesAction.do",
+		
+		"GET/platform-overview":"/DataCenterAction.do",
+		"GET/bundle-overview":"/SoftBundleAction.do"
+	},
+	"fallback":{
+		"GET/log-list":"GET/log-list.json"
+	}
+}

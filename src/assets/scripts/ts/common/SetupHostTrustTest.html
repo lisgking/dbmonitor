@@ -1,0 +1,27 @@
+<form id="SetupHostTrust" class="form-horizontal" role="form">
+        <div class="form-group">
+        <label class="col-sm-3 control-label">${username}</label>
+        <div class="col-sm-5">
+            <input type="text" pattern='^[a-z0-9_-]{3,16}$' class="form-control" data-role="username" name="username" required="required">
+        </div>
+        
+    </div>
+       
+    <div class="form-group">
+        <label class="col-sm-3 control-label">${password}</label>
+        <div class="col-sm-5">
+            <input type="password" data-role="password" name="password" required="required" class="form-control">
+        </div>
+       
+    </div>
+       
+        <div class="form-group">
+        </div>
+       
+        <div class="modal-footer my_modal_footer">
+                <button type="button" class="btn btn-default save btn-primary" data-role="sub">${submit}</button>
+                
+                <button type="button" class="btn btn-default save" data-role="cancel">${cancel}</button>
+           
+        </div>
+</form>

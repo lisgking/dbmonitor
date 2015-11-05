@@ -1,0 +1,35 @@
+
+<!--[sCellFileTemplate]-->
+<b class="stream-uploading-ico"></b>
+<div class="stream-file-name"><strong></strong></div>
+<div class="stream-process">
+    <a class="stream-cancel" href="javascript:void(0)" title="${delete}">
+        <span class="glyphicon glyphicon-trash"/>
+    </a>
+	<span class="stream-process-bar"><span style="width: 0%;"></span></span>
+	<span class="stream-percent">0%</span>
+</div>
+<div class="stream-cell-infos">
+	<span class="stream-cell-info">${speed}:<em class="stream-speed"></em></span>
+	<span class="stream-cell-info">${uploaded}:<em class="stream-uploaded"></em></span>
+	<span class="stream-cell-info">${remainingTime}:<em class="stream-remain-time"></em></span>
+</div>
+<!--[/sCellFileTemplate]-->
+
+<!--[sTotalContainer]-->
+<div id="#totalContainerId#" class="stream-total-tips">
+	${overallProgress}:
+	<span class="stream-process-bar"><span style="width:0%;"></span></span>
+	<span class="stream-percent">0%</span>,
+	<strong class="_stream-total-uploaded">0B</strong>/<strong class="_stream-total-size">&nbsp;</strong>
+	<!--${totalUploaded} ${totalFileSize}-->
+</div>
+<!--[/sTotalContainer]-->
+
+<!--[sUploadStartError]-->
+<div class="upload-start-error" style="display: none;"></div>
+<!--[/sUploadStartError]-->
+
+<!--[sFilesContainer]-->
+<div class="stream-files-scroll" style="height: #filesQueueHeight#px;"><ul id="#filesContainerId#"></ul></div>
+<!--[/sFilesContainer]-->

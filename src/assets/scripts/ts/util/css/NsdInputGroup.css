@@ -1,0 +1,66 @@
+.nsd-form{
+	position:absolute;
+	z-index:9999;
+	max-width:320px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	padding:10px;
+}
+.nsd-form p{
+	margin:0;
+	margin-top:10px;
+}
+.nsd-form label[for]:after{
+	content:":";
+}
+input[data-type="nsd"]{
+	margin:0;
+	padding:0;
+	width:98%;
+	width:-webkit-calc(100% - 2px);
+	width:-moz-calc(100% - 2px);
+	width:calc(100% - 2px);
+}
+input[data-type="nsd"][data-value]{
+	background-color:#FFFACC;
+}
+
+input[data-type="servers"][data-value]{
+	background-color:#FFFACC;
+}
+
+input[data-type="failureGroup"]{
+	margin:0;
+	padding:0;
+	width:98%;
+	width:-webkit-calc(100% - 2px);
+	width:-moz-calc(100% - 2px);
+	width:calc(100% - 2px);
+}
+input[data-type="failureGroup"][data-value]{
+	background-color:#FFFACC;
+}
+.nsd-pattern{
+	width:200px;
+	padding:4px;
+}
+.nsd-num{
+	width:100px;
+}
+.nsd-btn{
+	margin-top:10px;
+	width:80px;
+}
+.nsd-lnk{
+	margin-top:20px;
+}
+
+.nsd-form >.leftarrow {
+	position: absolute;
+	left:-17px;
+	width:0;height:0;
+	line-height:0;
+	border-width:8px;
+	border-style:solid;
+	border-color: transparent #A9DBF6 transparent transparent;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/global.css" />
+	<link rel="stylesheet" href="styles/dialog/dialog.css" />
+	<link rel="stylesheet" href="styles/dialog/dialog-new-cronexp.css" />
+</head>
+<body>
+	<div class="dialog-new-cronexp">
+		<div class="dialog-head">
+			<h2>Create a Cron Expression</h2>
+		</div>
+		<div class="dialog-body">
+			<div class="dialog-steps">
+				<hr class="steps-track" />
+				<table>
+					<thead>
+						<tr class="step-names">
+							<!--<td>Year</td>-->
+							<td class="current">Month</td>
+							<td>Day</td>
+							<td>Hours</td>
+							<td>Minutes</td>
+							<!-- <td>Seconds</td> -->
+							<td>Expression</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="step-signs">
+							<!--<td><span></span></td>-->
+							<td class="current"><span></span></td>
+							<td><span></span></td>
+							<td><span></span></td>
+							<td><span></span></td>
+							<!-- <td><span></span></td> -->
+							<td><span></span></td>
+						</tr>
+					</tbody>
+					<tfoot></tfoot>
+				</table>
+			</div>
+			<div class="dialog-stage">
+				<div class="step-contents">
+					<!--<div>
+						<p>Please specify year</p>
+						<div class="tabs_list year_tabs">
+							<label class="current"><input type="radio" name="year" value="*" class="option_every" checked="checked" />Every year</label>
+							<label><input type="radio" name="year" value="/" class="option_interval" />Year interval</label>
+							<label><input type="radio" name="year" value="," class="option_specific" />Specific year(s)</label>
+							<label><input type="radio" name="year" value="-" class="option_range" />Year range</label>
+						</div>
+						<div class="content_panels year_panels">
+							<div class="current">&#20;</div>
+							<div>
+								<label>from <select name="year.start" class="year_options"></select></label>
+								<label>every <select name="year.interval"></select> year(s)
+								</label>
+							</div>
+							<div>
+								<p class="field_options year_options"></p>
+							</div>
+							<div>
+								<label>From <select name="year.from" class="year_options"></select></label>
+								<label>to <select name="year.to" class="year_options"></select></label>
+							</div>
+						</div>
+					</div>-->
+					<div class="current">
+						<p>Please specify month</p>
+						<div class="tabs_list month_tabs">
+							<label class="current"><input type="radio" name="month.format" value="*" class="option_every" checked="checked" />Every month</label>
+							<label><input type="radio" name="month.format" value="/" class="option_interval" />Months interval</label>
+							<label><input type="radio" name="month.format" value="," class="option_specific" />Specific month(s)</label>
+							<label><input type="radio" name="month.format" value="-" class="option_range" />Month range</label>
+						</div>
+						<div class="content_panels month_panels">
+							<div class="current">&#20;</div>
+							<div>
+								<label>from <select name="month.start" class="month_options"></select></label>
+								<label>every <select name="month.interval"></select> month(s)
+								</label>
+							</div>
+							<div>
+								<p class="field_options month_options"></p>
+							</div>
+							<div>
+								<label>From <select name="month.from" class="month_options"></select></label>
+								<label>to <select name="month.to" class="month_options"></select></label>
+							</div>
+						</div>
+					</div>
+					<div>
+						<p>Please specify day of month or day of week</p>
+						<div class="tabs_list dayordate_tabs">
+							<label class="current"><input type="radio" name="dayordate" value="day" checked="checked" />day of week</label>
+							<label><input type="radio" name="dayordate" value="date" />day of month</label>
+						</div>
+						<div class="content_panels dayordate_panels">
+							<div class="current">
+								<div class="tabs_list day_tabs">
+									<label class="current"><input type="radio" name="day.format" value="*" class="option_every" checked="checked" />Every day</label>
+									<label><input type="radio" name="day.format" value="/" class="option_interval" />Days interval</label>
+									<label><input type="radio" name="day.format" value="," class="option_specific" />Specific day(s)</label>
+									<label><input type="radio" name="day.format" value="-" class="option_range" />Days range</label>
+								</div>
+								<div class="content_panels day_panels">
+									<div class="current">&#20;</div>
+									<div>
+										<label>from <select name="day.start" class="day_options"></select></label>
+										<label>every <select name="day.interval"></select> day(s)
+										</label>
+									</div>
+									<div>
+										<p class="field_options day_options"></p>
+									</div>
+									<div>
+										<label>From <select name="day.from" class="day_options"></select></label>
+										<label>to <select name="day.to" class="day_options"></select></label>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="tabs_list date_tabs">
+									<label class="current"><input type="radio" name="date.format" value="*" class="option_every" checked="checked" />Every day of a month</label>
+									<label><input type="radio" name="date.format" value="/" class="option_interval" />Day(s) interval of a month</label>
+									<label><input type="radio" name="date.format" value="," class="option_specific" />Specific day(s) of a month</label>
+									<label><input type="radio" name="date.format" value="-" class="option_range" />Days range of a month</label>
+								</div>
+								<div class="content_panels date_panels">
+									<div class="current">&#20;</div>
+									<div>
+										<label>from <select name="date.start" class="date_options"></select></label>
+										<label>every <select name="date.interval"></select> day(s)
+										</label>
+									</div>
+									<div>
+										<p class="field_options date_options"></p>
+									</div>
+									<div>
+										<label>From <select name="date.from" class="date_options"></select></label>
+										<label>to <select name="date.to" class="date_options"></select></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<p>Please specify hours</p>
+						<div class="tabs_list hours_tabs">
+							<label class="current"><input type="radio" name="hours.format" value="*" class="option_every" checked="checked" />Every hour</label>
+							<label><input type="radio" name="hours.format" value="/" class="option_interval" />Hours interval</label>
+							<label><input type="radio" name="hours.format" value="," class="option_specific" />Specific hour(s)</label>
+							<label><input type="radio" name="hours.format" value="-" class="option_range" />Hours range</label>
+						</div>
+						<div class="content_panels hours_panels">
+							<div class="current">&#20;</div>
+							<div>
+								<label>from <select name="hours.start" class="hours_options"></select></label>
+								<label>every <select name="hours.interval"></select> hour(s)
+								</label>
+							</div>
+							<div>
+								<p class="field_options hours_options"></p>
+							</div>
+							<div>
+								<label>From <select name="hours.from" class="hours_options"></select></label>
+								<label>to <select name="hours.to" class="hours_options"></select></label>
+							</div>
+						</div>
+					</div>
+					<div>
+						<p>Please specify minutes</p>
+						<div class="tabs_list minutes_tabs">
+							<label class="current"><input type="radio" name="minutes.format" value="*" class="option_every" checked="checked" />Every minute</label>
+							<label><input type="radio" name="minutes.format" value="/" class="option_interval" />Minutes interval</label>
+							<label><input type="radio" name="minutes.format" value="," class="option_specific" />Specific minute(s)</label>
+							<label><input type="radio" name="minutes.format" value="-" class="option_range" />Minutes range</label>
+						</div>
+						<div class="content_panels minutes_panels">
+							<div class="current">&#20;</div>
+							<div>
+								<label>from <select name="minutes.start" class="minutes_options"></select></label>
+								<label>every <select name="minutes.interval"></select> minute(s)
+								</label>
+							</div>
+							<div>
+								<p class="field_options minutes_options"></p>
+							</div>
+							<div>
+								<label>From <select name="minutes.from" class="minutes_options"></select></label>
+								<label>to <select name="minutes.to" class="minutes_options"></select></label>
+							</div>
+						</div>
+					</div>
+					<!--<div>
+						<p>Please specify seconds</p>
+						<div class="tabs_list seconds_tabs">
+							<label class="current"><input type="radio" name="seconds.format" value="*" class="option_every" checked="checked" />Every second</label>
+							<label><input type="radio" name="seconds.format" value="/" class="option_interval" />Seconds interval</label>
+							<label><input type="radio" name="seconds.format" value="," class="option_specific" />Specific second(s)</label>
+							<label><input type="radio" name="seconds.format" value="-" class="option_range" />Seconds range</label>
+						</div>
+						<div class="content_panels seconds_panels">
+							<div class="current">&#20;</div>
+							<div>
+								<label>from <select name="seconds.start" class="seconds_options"></select></label>
+								<label>every <select name="seconds.interval"></select> second(s)
+								</label>
+							</div>
+							<div>
+								<p class="field_options seconds_options"></p>
+							</div>
+							<div>
+								<label>From <select name="seconds.from" class="seconds_options"></select></label>
+								<label>to <select name="seconds.to" class="seconds_options"></select></label>
+							</div>
+						</div>
+					</div>-->
+					<div>
+						<p>Preview your settings</p>
+						<p>
+							<label for="cronExpOutput">Cron Expression</label>
+							<input type="text" id="cronExpOutput" name="cronExp" />
+						</p>
+						<p>
+							<label for="cronExpLocaleStringOutput">Description</label>
+							<input type="text" id="cronExpLocaleStringOutput" name="cronExp.localeString" />
+						</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dialog-foot clear-after">
+			<div class="button-group">
+				<input type="button" value="Cancel" id="btn_cancel" />
+				<input type="button" value="Previous" id="btn_prev" disabled="disabled" />
+				<input type="button" value="Next" id="btn_next" />
+				<input type="button" value="Submit" id="btn_submit" class="hidden" />
+			</div>
+		</div>
+	</div>
+	<script src="../scripts/jquery.js"></script>
+	<script src="scripts/jquery/top.js"></script>
+	<script src="scripts/jquery/steps.js"></script>
+	<script src="scripts/jquery/tabs.js"></script>
+	<script src="scripts/jquery/cronexp.js"></script>
+	<script src="scripts/jquery/cronexpeditor.js"></script>
+	<script src="scripts/jquery/dialog-new-cronexp.js"></script>
+</body>
+</html>

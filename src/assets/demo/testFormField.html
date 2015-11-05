@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Power Center</title>
+  <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../fonts/Font-Awesome-3.2.1/css/font-awesome.css">
+
+  <link rel="stylesheet" type="text/css" href="../styles/theme.css">
+</head>
+<body>
+<div id="test"></div>
+
+<script>
+var require={
+  baseUrl:"../scripts",
+  config:{
+    "dojo/css":{
+      baseUrl:"../scripts"
+    },
+    "dojo/nls":{
+      baseUrl:"../scripts",
+      lang:document.documentElement.lang
+    }  
+  },
+  skipDataMain:true
+};
+</script>
+
+<script src="../scripts/require.js"></script>
+<script src="../scripts/jquery.js"></script>
+<script src="../scripts/v8natives.js"></script>
+<script>
+  require([
+    'ts/util/GUtil',
+  ],function(GUtil){
+    require([
+      'ts/widgets/CommonFormField',
+    ],function(CommonFormField){ 
+
+       var formField = new CommonFormField();
+
+        formField.loadData([{
+                _type: 'input',
+                _name: 'nameAlias',
+                _val: '',
+                _text: 'lparName',
+                _valid: {
+                    required: {
+                        message: 'please enter the lpar name',
+                        params: true
+                    },
+                    pattern: {
+                        message: 'please type in the name of the lpar the correct format',
+                        params: '^[\\w-]{3,}$'
+                    }
+                  }
+            },{
+                _type: 'password',
+                _name: 'nameAlias',
+                _val: '',
+                _text: 'lpar Password'
+            }, {
+                _isSubmitGroup: true,
+                _type: 'button',
+                _name: 'save',
+                _text: 'submit',
+                _clickCB: function(){
+                    alert('提交')
+                }
+            }
+        ]);      
+
+   
+
+    formField.placeAt($('#test'), 'append');      
+   
+  });
+});
+
+</script>
+</body>
+</html>
+
+

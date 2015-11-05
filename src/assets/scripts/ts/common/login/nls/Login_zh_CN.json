@@ -1,0 +1,18 @@
+{
+	"userId":"账户ID",
+	"password":"密码",
+	"language":"语言",
+	
+	"login_title":"登录到XEAP",
+	"rememberMe":"记住我",
+	"Login":"登录",
+	"Cancel":"取消",
+	"Loading":"加载中..",
+	
+	"login_FAIL":"登录失败！",
+	"logout_FAIL":"退出失败！",
+	"userName_VALUEMISSING":"请输入账户ID",
+	"userName_PATTERNMISMATCH":"只能包含以字母开头的2~32位字母、数字和连字符。",
+	"password_VALUEMISSING":"请输入密码",
+	"password_PATTERNMISMATCH":"密码无效。\n密码由6~32位ASCII字符组成"
+}

@@ -1,0 +1,47 @@
+<form action="" class="nsd-form" data-role="form" onsubmit="return false;">
+	<div data-role="leftarrow" class="leftarrow"></div>
+	<!-- <div style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;"></div> -->
+	<table>
+		<tbody>
+			<tr>
+				<td colspan="2">
+					<label for="">${Pattern}</label><a href="help://xxx#nsd-pattern" title="${Pattern_help}">${Help}</a><br>
+					<input type="text" class="nsd-pattern" name="pattern" required maxlength="32"
+						pattern="[\w#,]*" title="${Pattern_message}"
+						data-role="pattern" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="">${Start}</label><br>
+					<input type="number" class="nsd-num" name="start" value="1" min="0" max="4294967295"
+							data-role="start" />
+				</td>
+				<td>
+					<label for="">${End}</label><br>
+					<input type="number" class="nsd-num" name="end" value="1" min="0" max="4294967295"
+							data-role="end" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label>
+						<input type="checkbox" name="preview" value="on" data-role="preview" style="vertical-align:middle;" />
+						${Preview}
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="${Fill}" class="nsd-btn" data-role="fill" />
+					<input type="button" value="${Close}" class="nsd-btn" data-role="close" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<a href="javascript:;" class="nsd-lnk" data-role="reset">${Reset}</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>

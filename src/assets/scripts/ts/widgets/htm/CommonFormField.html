@@ -1,0 +1,128 @@
+<div>
+    <form class="form-horizontal" role="form">
+        <!-- ko foreach: fields -->
+        <!-- ko if: _type -->
+        <div data-bind="template: 'formfield-'+ _type +'-tmpl'" class="form-group">
+
+        </div>
+        <!-- /ko -->
+        <!-- /ko -->
+
+        <!-- ko if: submitGroup().length > 0 -->
+        <div class="modal-footer my_modal_footer">
+            <!-- ko foreach: submitGroup -->
+                <button type="button" data-bind="text: _text, css: _clsName, event:{mouseup: _clickCB}" class="btn btn-default save">提交</button>
+            <!-- /ko -->
+            <!-- <button data-bind="visible: cancelBtnIsShow" type="button" class="btn btn-default" data-dismiss="modal">取消</button> -->
+        </div>
+        <!-- /ko -->
+    </form>
+
+    <script id="formfield-text-tmpl" type="text/template">
+        <label data-bind="text: _text" class="col-sm-3 control-label"></label>
+        <div class="col-sm-5">
+            <p data-bind="text: $data[_name]" class="form-control-static"></p>
+        </div>
+        <!-- ko template: 'formfield-msg-tmpl' -->
+        <!-- /ko -->
+    </script>
+
+    <script id="formfield-select-tmpl" type="text/template">
+        <label data-bind="text: _text" class="col-sm-3 control-label"></label>
+        <div class="col-sm-5">
+            <select data-bind="options: _options, optionsText: 'text', value: $data[_name]" class="form-control">
+            </select>
+        </div>
+        <!-- ko template: 'formfield-msg-tmpl' -->
+        <!-- /ko -->
+    </script>
+
+    <script id="formfield-input-tmpl" type="text/template">
+        <label data-bind="text: _text" class="col-sm-3 control-label"></label>
+        <div class="col-sm-5">
+            <input data-bind="value: $data[_name],enable:$data['_disable']()" type="text" class="form-control">
+        </div>
+        <!-- ko template: 'formfield-msg-tmpl' -->
+        <!-- /ko -->
+    </script>
+    <script id="formfield-password-tmpl" type="text/template">
+        <label data-bind="text: _text" class="col-sm-3 control-label"></label>
+        <div class="col-sm-5">
+            <input data-bind="value: $data[_name]" type="password" class="form-control">
+        </div>
+        <!-- ko template: 'formfield-msg-tmpl' -->
+        <!-- /ko -->
+    </script>
+
+    <script id="formfield-textarea-tmpl" type="text/template">
+        <label data-bind="text: _text" class="col-sm-3 control-label"></label>
+        <div class="col-sm-5">
+            <textarea data-bind="value: $data[_name]" class="form-control"></textarea>
+        </div>
+        <!-- ko template: 'formfield-msg-tmpl' -->
+        <!-- /ko -->
+    </script>
+
+    <script id="formfield-checkbox-tmpl" type="text/template">
+        <label data-bind="text: _text" class="col-sm-3 control-label"></label>
+        <div class="col-sm-5">
+            <!-- ko if: _data -->
+            <ul data-bind="foreach: _data, attr:{class: _direction === 'v' || _direction === 'vertical' ? 'list-unstyled' : 'list-inline list-unstyled'}" class="list-inline list-unstyled">
+                <li>
+                    <input data-bind="checked: isChecked, value: val, attr:{name: $parent['name']}" type="checkbox" class="">
+                    <span data-bind="text: text"></span>
+                </li>
+            </ul>
+            <!-- /ko -->
+            <!-- ko ifnot: $data._data -->
+            <input data-bind="checked: $data[_name], attr:{name: $data[_name]}" type="checkbox" class="">
+            <!-- /ko -->
+
+        </div>
+        <!-- ko template: 'formfield-msg-tmpl' -->
+        <!-- /ko -->
+    </script>
+
+    <script id="formfield-radio-tmpl" type="text/template">
+        <label data-bind="text: _text" class="col-sm-3 control-label"></label>
+        <div class="col-sm-5">
+            <!-- ko if: _data -->
+            <ul data-bind="foreach: _data, attr:{class: _direction === 'v' || _direction === 'vertical' ? 'list-unstyled' : 'list-inline list-unstyled'}" class="list-inline list-unstyled">
+                <li>
+                    <input data-bind="checked: $parent._checked, value: val, attr:{name: $parent['_name']}" name="" type="radio" class="">
+                    <span data-bind="text: text"></span>
+                </li>
+            </ul>
+            <!-- /ko -->
+        </div>
+        <!-- ko template: 'formfield-msg-tmpl' -->
+        <!-- /ko -->
+    </script>
+
+    <script id="formfield-button-tmpl" type="text/template">
+        <!-- ko ifnot: $data._isSubmitGroup -->
+        <label data-bind="text: _text" class="col-sm-3 control-label"></label>
+        <div class="col-sm-5">
+            <button type="button" data-bind="event:{mouseup: _clickCB}" class="btn btn-primary">提交</button>
+        </div>
+            <!-- ko template: 'formfield-msg-tmpl' -->
+            <!-- /ko -->
+        <!-- /ko -->
+
+    </script>
+
+
+    <script id="formfield-msg-tmpl" type="text/template">
+        <div class="col-sm-4">
+        
+            <!-- ko if: $data._valid -->
+            <p data-bind="validationMessage: $data[_name]" class="form-control-static error-message"></p>
+            <!-- /ko -->
+            <!-- ko if: $data._description -->
+            <p data-bind="html: $data._description" class="form-control-static"></p>
+            <!-- /ko -->
+    </script>
+
+
+
+</div>

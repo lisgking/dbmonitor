@@ -1,0 +1,36 @@
+#TSFileUpload{
+	position:relative;
+	height:125px;
+}
+#TSFileUpload .-ts-file-buttonbar{
+	position: absolute;
+	left: 31px;
+	bottom: 16px;
+}
+#TSFileUpload .-ts-file-section{
+	height: auto;
+}
+#TSFileUpload #i_select_files{
+	margin:0;
+}
+#TSFileUpload  button:disabled{
+	visibility:hidden;
+}
+#TSFileUpload .-ts-file-buttonbar button{
+	color: #fff;
+    border: 1px solid #4478cb;
+    background-color: #6196e0;
+    background: -webkit-linear-gradient( top, #6399e1, #5286da);
+    border-radius: 4px;
+    cursor: pointer;
+	width:70px;
+	height:26px;
+    text-decoration: none;
+    margin: 6px -4px 2px 6px;
+}
+#TSFileUpload .-ts-file-buttonbar button > span{
+    opacity: 0.6;
+}
+#TSFileUpload .-ts-file-buttonbar button:hover > span{
+    opacity: 0.9;
+}

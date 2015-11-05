@@ -1,0 +1,107 @@
+ .modal{
+	background:rgba(0, 0, 0, 0.2);
+}
+#GenericDialog .modal-header {
+	height: 48px;
+	line-height: 48px;
+	border-bottom: 1px solid #d0d0d0;
+	background-color: #6c8dcf;
+	background: -webkit-linear-gradient( top, #7595d2, #6082ca);
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	cursor: move;
+}
+
+#GenericDialog .modal-header h4 {
+	font-size: 16px;
+	color: #fff;
+	font-family: Arial, "微软雅黑";
+	font-weight: bold;
+}
+
+#GenericDialog .modal-header button.btn-close {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: url(/assets/images/icon-close8s.png) no-repeat center;
+	top: 16px;
+	right: 16px;
+    border: none;
+}
+
+#GenericDialog .modal-header button.btn-close:hover {
+	background: url(/assets/images/icon-closeb8.png) no-repeat center #666;
+	border-radius: 20px;
+}
+
+#GenericDialog .modal-body{
+	/*overflow-y: auto;*/
+}
+
+#GenericDialog .modal-body:after{
+	display: block;
+    content: " ";
+	height: 75px;
+	width: 100%;
+}
+
+#GenericDialog .modal-body .icon-spinner{
+    font-size: 50px;
+    color: #383CD1;
+}
+
+#GenericDialog .modal-content {
+  border-radius: 8px;
+  border: none;
+  position: fixed;
+  width: 600px;
+}
+
+#GenericDialog .modal-transparency{
+    background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    border: 0;
+}
+
+#GenericDialog .modal-loading-text{
+    font-size: 20px;
+    color: #0B0B0B;
+}
+
+#GenericDialog .my_modal_footer.modal-footer {
+	margin: 0 0;
+	padding: 9px;
+	text-align: right;
+	height: 60px;
+	background-color: #c7d0df;
+	border-top: 1px solid #7493d3;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+
+#GenericDialog .my_modal_footer.modal-footer button {
+	color: #dfe6f6;
+	border: 1px solid #4478cb;
+	background-color:#6196e0;
+	background: -webkit-linear-gradient( top, #6399e1, #5286da);
+	border-radius: 4px;
+	padding: 6px 20px;
+	cursor: pointer;
+}
+
+#GenericDialog .my_modal_footer.modal-footer button:last-child {
+	margin-right: 4px;
+}
+
+#GenericDialog .my_modal_footer.modal-footer button:hover {
+	color:#fff;
+	background-color: #5488db;
+	background: -webkit-linear-gradient( top, #558de5, #4479df);
+}
+#GenericDialog .my_modal_footer.modal-footer button:focus, button:active {
+    outline: 0px none !important;
+}

@@ -1,0 +1,57 @@
+.-ts-config-pane{
+	height:240px;
+}
+.-ts-config-pane:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.-ts-config-nav{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	position:absolute;
+	width:180px;
+	height:240px;;
+	border:2px groove #eee;
+	border-right:2px ridge #fff;
+	border-bottom:2px ridge #fff;
+	background-color:#fff;
+}
+.-ts-config-nav a{
+	display:block;
+	line-height:30px;
+	color:#333;
+	text-decoration:none;
+	text-indent:0.5em;
+}
+.-ts-config-nav a.current{
+	background-color:#eee;
+}
+
+.-ts-config-main{
+	height:100%;
+	margin-left:195px;
+	border:2px groove #fff;
+	border-right:2px ridge #fff;
+	border-bottom:2px ridge #fff;
+}
+.-ts-config-head{
+	border-bottom:2px groove #fff;
+}
+.-ts-config-head>h3{
+	margin:0;
+	line-height:32px;
+	text-indent:10px;
+}
+.-ts-config-body{
+	height:205px;
+	overflow:auto;
+}
+.-ts-config-body>div{
+	padding:10px;
+	display:none;
+}
+.-ts-config-body>div.current{
+	display:inherit;
+}

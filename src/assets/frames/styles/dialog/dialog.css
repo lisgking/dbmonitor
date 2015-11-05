@@ -1,0 +1,155 @@
+/*~~~~~~~~~~dialog-head~~~~~~~~~~*/
+.dialog-head{
+	padding:10px 20px;
+	height:28px;
+	overflow:hidden;
+}
+.dialog-head h2{
+	font-weight:normal;
+	font-size:18px;
+	line-height:28px;
+	text-align:center;
+	color:#333;
+}
+/*~~~~~~~~~~dialog-body~~~~~~~~~~*/
+.dialog-body{
+	position:relative;
+	height:418px;
+	background:#ececec;
+	border-top:2px groove #fff;
+	border-bottom:2px groove #fff;
+	overflow:auto;
+}
+/*~~~~~~~~~~dialog-body-steps~~~~~~~~~~*/
+.dialog-steps{
+	position:relative;
+	margin:20px 20px 0;
+	border:1px solid #999;
+	border-radius:5px;
+	background-color:#E6E6E6;
+}
+.dialog-steps table{
+	position:relative;
+	z-index:11;
+	width:100%;
+	text-align:center;
+}
+.step-names td{
+	color:#444;
+	line-height:24px;
+}
+.step-names td.current{
+	
+}
+.step-names td.current:before{
+	content:"[";
+	margin-right:5px;
+	vertical-align:text-top;
+	line-height:14px;
+}
+.step-names td.current:after{
+	content:"]";
+	margin-left:5px;
+	vertical-align:text-top;
+	line-height:14px;
+}
+.steps-track{
+	position:absolute;
+	z-index:10;
+	border-top:1px solid #999;
+	top:30px;
+	left:50%;
+	width:532px;
+	margin-left:-266px;
+}
+.step-signs span{
+	display:inline-block;
+	width:10px;
+	height:10px;
+	text-align:center;
+	border:1px solid #666;
+	border-radius:16px;
+	background: #ECECEC;
+}
+.step-signs td.current span{
+	width: 15px;
+	height: 15px;
+	background-color: #ccc;
+}
+.step-signs td.passed span{
+	background-color: #51DC5F;
+}
+.dialog-stage{
+	position:relative;
+	margin:10px 20px 0;
+}
+.step-contents{
+	padding:10px;
+	height:290px;
+	overflow:hidden;
+	border:2px groove #fff;
+	border-radius:5px;
+}
+.step-contents>div{
+	height:290px;
+	overflow:auto;
+	display:none;
+	border-radius:5px;
+}
+.step-contents>div.current{
+	display:block;
+}
+.step-contents>div>p:first-child{
+	font-weight:bold;
+	font-size:14px;
+}
+/*~~~~~~~~~~dialog-body-datagrid~~~~~~~~~~*/
+.datagrid{
+	width:100%;
+	border:1px solid #cccccc;
+	border-radius:10px;
+}
+.datagrid th,.datagrid td{
+	padding:0 5px;
+	line-height:24px;
+}
+.datagrid th{
+	text-align:left;
+	background-color:#ccc;
+	border-top:2px groove #fff;
+	border-left:2px groove #eee;
+	border-bottom:1px solid #999;
+}
+.datagrid th:first-child{
+	border-left:none;
+}
+.datagrid td{
+	border-bottom:1px solid #cccccc;
+}
+.datagrid td input{
+	vertical-align:middle;
+}
+.datagrid tr:nth-child(odd){
+	background-color:#ececec;
+}
+.datagrid tr:nth-child(even){
+	background-color:#fff;
+}
+.datagrid tr.selected{
+	background-color:#69c;
+}
+
+/*~~~~~~~~~~dialog-foot~~~~~~~~~~*/
+.dialog-foot{
+	padding:11px 20px;
+	height:24px;
+	overflow:hidden;
+}
+.dialog-foot .button-group{
+	float:right;
+}
+.button-group input[type="button"]{
+	width:100px;
+	height:26px;
+	margin-left:10px;
+}

@@ -1,0 +1,48 @@
+/**
+ * 	用于气泡高度增大时向上自适应
+ */
+.bubbleBorder {
+	top: 0px;
+	position: absolute; 
+	//display: none;
+	z-index: 9999;
+}
+
+.bubble {
+	margin: 5px auto;
+	position: absolute; 
+	left: 0px; 
+	width: 200px;
+	bottom: -3px;
+}
+
+.bubble div {
+	background: url(../../../../images/bubble-arrowy.png) no-repeat center;
+	height: 10px;
+	left: 15px;
+	height: 8px;
+	width: 20px;
+}
+
+.bubble > ul >li {border: 0px; list-style:none; margin-bottom:px; line-height:1.4; text-align: left;}
+.bubble > ul {
+	color: #494d28;
+	//background-color:#7595d2;
+	background-color: #fbf5d1;
+	border-radius: 4px;
+	position: relative;
+	padding: 10px 15px;
+	//max-width: 166px;
+	word-break:break-all;
+	margin:0;
+	border: 1px #ffdc87 solid;
+	
+	position: absolute;
+	bottom: 7px;
+}
+.bubble img {
+	margin-left: 5%;
+}
+.bubble i.garrow { display:inline-block; width:18px; height:18px;  background:url(../../../../images/icon-garrow.png) no-repeat center; margin-right:4px; vertical-align: text-bottom;}
+.bubble i.oarrow { display:inline-block; width:18px; height:18px;  background:url(../../../../images/icon-oarrow.png) no-repeat center; margin-right:4px; vertical-align: text-bottom;}
+.bubble i.loading { display:inline-block; width:18px; height:18px;  background:url(../../../../images/loading.gif) no-repeat center; margin-right:4px; vertical-align: text-bottom;}

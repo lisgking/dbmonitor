@@ -1,0 +1,18 @@
+<div id="EditHostTest">
+    <form role="form" class="form-horizontal">
+        <div class="form-group">
+	        <label class="col-sm-3 control-label">${hostName}</label>
+	        <div class="col-sm-5">
+	            <input type="text" class="form-control" data-role="nameAlias" name="nameAlias" required="required"
+	            	pattern='^[\w-]{3,}$'
+	            	validateText="${please type in the name of the host the correct format}"
+	            	validateFunText="${Name must not be repeated}"
+	            >
+	        </div>
+	    </div>
+        <div class="modal-footer my_modal_footer">
+            <button class="btn btn-default save btn-primary" type="button" data-role="submit">${submit}</button>
+            <button class="btn btn-default save" type="button" data-role="cancel">${cancel}</button>
+        </div>
+    </form>
+</div>

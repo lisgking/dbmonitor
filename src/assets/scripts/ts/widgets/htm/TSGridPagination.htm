@@ -1,0 +1,37 @@
+<div class="-ts-gfoot table-footer-adjust" data-role="gfoot">
+    <fieldset data-role="fieldset">
+    <table class="-ts-gfoot-table">
+    <tfoot data-role="tfoot">
+        <tr>
+            <td class="align-left">
+                <label class="nowrap-inline-block">${PageSize}:
+                    <select name="rp">
+                        <option value="10">10</option>
+                        <option value="20" selected="selected">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <!-- <option value="2147483647">${Unlimited}</option> -->
+                    </select>
+                </label>
+                <label class="nowrap-inline-block">${PageNo}:
+                    <select name="page" data-role="page">
+                        <option value="1">1</option>
+                    </select>
+                </label>
+                <label class="nowrap-inline-block page-info"></label>
+            </td>
+            <td class="align-right">
+                <button type="button" data-role="prev" class="btn btn-default button-row">
+                    <span class="glyphicon glyphicon-menu-left"><!-- &#8678; --></span></button>
+                <button type="button" data-role="next" class="btn btn-default button-row">
+                    <span class="glyphicon glyphicon-menu-right"><!-- &#8680; --></span></button>
+                <button type="button" data-role="reload" class="btn btn-default button-row">
+                    <span class="glyphicon glyphicon-repeat"><!-- &#8635; --></span></button>
+                <button type="button" data-role="home" class="btn btn-default button-row">
+                    <span class="glyphicon glyphicon-home"><!-- &#8634; --></span></button>
+            </td>
+        </tr>
+    </tfoot>
+    </table>
+    </fieldset>
+</div>

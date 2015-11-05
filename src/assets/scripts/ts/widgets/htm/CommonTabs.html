@@ -1,0 +1,10 @@
+<div class="">
+    <ul data-bind="foreach: tabList" class="nav nav-tabs">
+        <li data-bind="click: $parent.clickTab, attr:{class: isActive() == true ? 'active' : ''}"><a data-bind="text: title">基本信息</a></li>
+    </ul>
+    <div data-bind="foreach: tabList" class="tab-content">
+        <div data-bind="fadeVisible: isActive, attr:{id: id}, css: {active: isActive}" class="panel panel-default tab-pane fade active">
+
+        </div>
+    </div>
+</div>

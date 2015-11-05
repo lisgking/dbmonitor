@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Power Center</title>
+  <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../fonts/Font-Awesome-3.2.1/css/font-awesome.css">
+
+  <link rel="stylesheet" type="text/css" href="../styles/theme.css">
+
+</head>
+<body>
+<div id="test"></div>
+<div>
+  <a id="test1" class="btn btn-default">为id为1注册删除回调函数</a>
+  <a id="test2" class="btn btn-default">刷新 id为1的节点（删除id为11的节点）</a>
+</div>
+<div>
+  <a id="test3" class="btn btn-default">为id为1注册添加回调函数</a>
+  <a id="test4" class="btn btn-default">刷新 id为1的节点（添加id为19的节点）</a>
+</div>
+<div>
+  <a id="test5" class="btn btn-default">为id为1注册更新回调函数</a>
+  <a id="test6" class="btn btn-default">刷新 id为1的节点（更新id为12的节点名称）</a>
+</div>
+<script>
+var require={
+  baseUrl:"../scripts",
+  config:{
+    "dojo/css":{
+      baseUrl:"../scripts"
+    },
+    "dojo/nls":{
+      baseUrl:"../scripts",
+      lang:document.documentElement.lang
+    }  
+  },
+  skipDataMain:true
+};
+</script>
+
+<script src="../scripts/require.js"></script>
+<script src="../scripts/jquery.js"></script>
+<script src="../scripts/v8natives.js"></script>
+<script>
+  require([
+    'ts/util/GUtil',
+  ],function(GUtil){
+    require([
+      'ts/widgets/CommonTree',
+    ],function(CommonTree){ 
+
+
+    var opts = {
+      url: 'datacenterTree.json',//请求树地址
+      iconCB: function(itemData){//根据节点数据type 生成图标className
+          var defaultIconClsName = '';//默认图标
+          var iconClsName = defaultIconClsName;
+          var hostRunningStatusMap = {//主机不同状态显示相应图标
+              0: 'closed',
+              1: 'running',
+              2: 'unknown',
+              3: 'starting',
+              4: 'closing',
+              5: 'restarting'
+          };
+
+          var lparRunningStatusMap = {//lpar不同状态显示相应图标
+              0: 'unknown',
+              1: 'running',
+              2: 'closed',
+              3: 'suspended',
+              4: 'unavailable',
+              5: 'starting',
+              6: 'closing',
+              7: 'migrating',
+              8: 'deleting',
+              9: 'suspending',
+              10: 'reconfiguring',
+              11: 'openfirmware'
+          };
+
+          if(itemData.type === 'xcatPlatformHost' || itemData.type === 'ivmPlatformHost'){
+              if(itemData.dataset){
+                  iconClsName = 'host';
+                  iconClsName += GUtil.capitalize((hostRunningStatusMap[itemData.dataset.runningStatus] || ''));
+              }
+          }
+
+          if(itemData.type === 'xcatPlatformHostLpar' || itemData.type === 'ivmPlatformHostLpar'){
+              if(itemData.dataset){
+                  iconClsName = 'lpar';
+                  iconClsName += GUtil.capitalize((lparRunningStatusMap[itemData.dataset.runningStatus] || ''));
+              }
+          }          
+          
+          return iconClsName || defaultIconClsName;
+      },
+      selectNodeCB: function(itemData){
+          var type = itemData.type;
+          var data = itemData.dataset;
+
+          //这里可以根据type加载相应的widget
+          // alert('我选中了"'+ itemData.name() +'"节点')
+          
+      }
+  };
+
+  var tree = new CommonTree(opts);
+  // window.tree = tree;
+  tree.placeAt($('#test'), 'append');
+  var num = 0;  
+
+  $('#test1').click(function(){
+      ++num;
+      alert('我注册删除Host函数了：fun' + num);
+      (function(num){
+        tree.registerCB(1, 'removeData.host', function(data){
+              alert('我执行了注册Host的回调函数：fun' + num);
+        });   
+      })(num);   
+  });
+
+  $('#test2').click(function(){
+      // tree.refreshNode(1);//真实接口有请求地址时
+      tree.loadData([
+          {
+            "open": true,
+            "id": "12",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host host id为12",
+            "dataset": {
+              "runningStatus": "1"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },
+          {
+            "open": true,
+            "id": "13",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host2",
+            "dataset": {
+              "runningStatus": "2"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },
+          {
+            "open": true,
+            "id": "14",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host3",
+            "dataset": {
+              "runningStatus": "3"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },
+          {
+            "open": true,
+            "id": "15",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host4",
+            "dataset": {
+              "runningStatus": "4"
+            },
+            "href": "host.html",
+            "target": "_host"
+          }
+        ], 1);
+  });
+
+  $('#test3').click(function(){
+      ++num;
+      alert('我注册添加Host函数了：fun' + num);
+      (function(num){
+        tree.registerCB(1, 'addData.host', function(data){
+              alert('我执行了注册添加Host的回调函数：fun' + num);
+        });   
+      })(num);   
+  });
+
+  $('#test4').click(function(){
+    // tree.refreshNode(1);//真实接口有请求地址时
+      tree.loadData([
+          {
+            "open": true,
+            "id": "19",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host id为19 新添加的",
+            "dataset": {
+              "runningStatus": "0"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },        
+          {
+            "open": true,
+            "id": "11",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host id为11",
+            "dataset": {
+              "runningStatus": "0"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },        
+          {
+            "open": true,
+            "id": "12",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host host id为12",
+            "dataset": {
+              "runningStatus": "1"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },
+          {
+            "open": true,
+            "id": "13",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host2",
+            "dataset": {
+              "runningStatus": "2"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },
+          {
+            "open": true,
+            "id": "14",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host3",
+            "dataset": {
+              "runningStatus": "3"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },
+          {
+            "open": true,
+            "id": "15",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host4",
+            "dataset": {
+              "runningStatus": "4"
+            },
+            "href": "host.html",
+            "target": "_host"
+          }
+        ], 1); 
+  });
+
+  $('#test5').click(function(){
+      ++num;
+      alert('我注册更新Host函数了：fun' + num);
+      (function(num){
+        tree.registerCB(1, 'updateData.host', function(data){
+              alert('我执行了注册更新Host的回调函数：fun' + num);
+        });   
+      })(num);   
+  });
+
+  $('#test6').click(function(){
+    // tree.refreshNode(1);//真实接口有请求地址时
+      tree.loadData([
+          {
+            "open": true,
+            "id": "11",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host id为11 这是我刚更新了名称",
+            "dataset": {
+              "runningStatus": "0"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },          
+          {
+            "open": true,
+            "id": "12",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host host id为12 这是我刚更新了名称",
+            "dataset": {
+              "runningStatus": "1"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },
+          {
+            "open": true,
+            "id": "13",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host2 这是我刚更新了名称",
+            "dataset": {
+              "runningStatus": "2"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },
+          {
+            "open": true,
+            "id": "14",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host3 这是我刚更新了名称",
+            "dataset": {
+              "runningStatus": "3"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },
+          {
+            "open": true,
+            "id": "15",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host4 这是我刚更新了名称",
+            "dataset": {
+              "runningStatus": "4"
+            },
+            "href": "host.html",
+            "target": "_host"
+          }
+        ], 1); 
+  });
+   
+  });
+});
+
+</script>
+</body>
+</html>
+
+

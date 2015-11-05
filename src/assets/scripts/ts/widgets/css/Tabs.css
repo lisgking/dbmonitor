@@ -1,0 +1,35 @@
+#tabs.tabs .nav-splan {
+	background-color: #e9edf3;
+}
+#tabs.tabs .nav-tabs {
+	height: 50px;
+	/* border-bottom: 1px solid #ced5e1; */
+	border: none;
+}
+#tabs .nav-splan li a {
+	color: #63a1e7;
+}
+#tabs.tabs .nav-splan li a {
+	margin-top: 10px;
+	border-radius: 0;
+	border: none;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+    outline: none;
+}
+#tabs.tabs .nav-splan li a:hover {
+	background-color:#f5f7fa;
+	color: #424242;
+}
+#tabs.tabs .nav-splan li.active a {
+	border: 1px solid #ced5e1;
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+	color: #3f4144;
+    outline: none;
+}

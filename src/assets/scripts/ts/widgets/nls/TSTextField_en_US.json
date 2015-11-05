@@ -1,0 +1,13 @@
+{
+	"validateText" : "Invalid input",
+	"validateFunText" : "The custom input is illegal",
+	"emptyText" : "Please input",
+	"emptyMsg" : "Cant be empty",
+	
+	"Only for the letters" : "Only for the letters",
+	"For the combination of letters and Numbers only" : "For the combination of letters and Numbers only",
+	"Must be a valid email" : "Must be a valid email",
+	"Must be a valid url" : "Must be a valid ur",
+	"Must be a legitimate IP address" : "Must be a legitimate IP address",
+	"Must be legal name" : "Must be legal name"
+}

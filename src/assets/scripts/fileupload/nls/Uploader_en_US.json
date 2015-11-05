@@ -1,0 +1,29 @@
+{
+	"emptyDirectoryIgnored":"Empty directory was ignored '$0'",
+	"fileIsBeingUploading":"There are file-upload tasks which are not finished, Still go and cancel uploading?",
+	"fileSizeOverflowInFlash":"Flash has a limit that 2GB as maximum size but current size is $size. file: $name",
+	"failedToCreateTask":"Failed to create the upload task: NO_TOKEN_FOUND. Status:$1",
+	"errorToCreateTask":"Failed to create the upload task. NETWORK_ERROR. Status:$0",
+	"fileNumOverflowInTask":"The biggest support to upload file number is $num, real option file number is: $length",
+	
+	"onSelect":"$length file(s) selected",
+	"onFileCountExceed":"File count is limited to $limited, but $selected selected",
+	"onMaxSizeExceed":"File size is limited to $limited, but $size selected. @file $name",
+	"onExtNameMismatch":"File extension is restricted to $filters. @file $name",
+	"onCancel":"File canceled. @file $name",
+	"onStop":"Upload stopped",
+	"onCancelAll":"$0 files Canceled!",
+	"onComplete":"File uploaded. @file $name @size $size",
+	"onQueueComplete":"All the files bave been uploaded",
+	"onUploadError":"A error occurred while uploading.  @tatus: $status, @message $msg",
+	
+	"delete": "Delete",
+	"speed": "Speed",
+	"uploaded": "Uploaded",
+	"remainingTime": "Remaining Time",
+	"overallProgress": "Overall Progress",
+	"totalUploaded":"Total Uploaded",
+	"totalFileSize": "Total File Size",
+	"chooseFile":"Choose File",
+	"dropFileHere":" or Drag and drop file here"
+}

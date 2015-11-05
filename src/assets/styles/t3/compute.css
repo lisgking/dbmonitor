@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import url("../global.css");
+body{
+	background:#dbe0e6;
+	background: linear-gradient(top,#fefefe,#eeeeee);
+}
+body[data-user="root"] [data-owner]{
+	display:none;
+}
+body[data-user="root"] [data-owner~="root"]{
+	display:inherit;
+}
+.box1{
+	margin:10px;
+}
+.wrap{
+	margin:10px;
+}

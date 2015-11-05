@@ -1,0 +1,902 @@
+[
+	{
+		"country":"",
+		"language":"العربية",
+		"name":"العربية",
+		"tag":"ar"
+	},
+	{
+		"country":"الإمارات",
+		"language":"العربية",
+		"name":"العربية (الإمارات)",
+		"tag":"ar-AE"
+	},
+	{
+		"country":"البحرين",
+		"language":"العربية",
+		"name":"العربية (البحرين)",
+		"tag":"ar-BH"
+	},
+	{
+		"country":"الجزائر",
+		"language":"العربية",
+		"name":"العربية (الجزائر)",
+		"tag":"ar-DZ"
+	},
+	{
+		"country":"مصر",
+		"language":"العربية",
+		"name":"العربية (مصر)",
+		"tag":"ar-EG"
+	},
+	{
+		"country":"العراق",
+		"language":"العربية",
+		"name":"العربية (العراق)",
+		"tag":"ar-IQ"
+	},
+	{
+		"country":"الأردن",
+		"language":"العربية",
+		"name":"العربية (الأردن)",
+		"tag":"ar-JO"
+	},
+	{
+		"country":"الكويت",
+		"language":"العربية",
+		"name":"العربية (الكويت)",
+		"tag":"ar-KW"
+	},
+	{
+		"country":"لبنان",
+		"language":"العربية",
+		"name":"العربية (لبنان)",
+		"tag":"ar-LB"
+	},
+	{
+		"country":"ليبيا",
+		"language":"العربية",
+		"name":"العربية (ليبيا)",
+		"tag":"ar-LY"
+	},
+	{
+		"country":"المغرب",
+		"language":"العربية",
+		"name":"العربية (المغرب)",
+		"tag":"ar-MA"
+	},
+	{
+		"country":"سلطنة عمان",
+		"language":"العربية",
+		"name":"العربية (سلطنة عمان)",
+		"tag":"ar-OM"
+	},
+	{
+		"country":"قطر",
+		"language":"العربية",
+		"name":"العربية (قطر)",
+		"tag":"ar-QA"
+	},
+	{
+		"country":"السعودية",
+		"language":"العربية",
+		"name":"العربية (السعودية)",
+		"tag":"ar-SA"
+	},
+	{
+		"country":"السودان",
+		"language":"العربية",
+		"name":"العربية (السودان)",
+		"tag":"ar-SD"
+	},
+	{
+		"country":"سوريا",
+		"language":"العربية",
+		"name":"العربية (سوريا)",
+		"tag":"ar-SY"
+	},
+	{
+		"country":"تونس",
+		"language":"العربية",
+		"name":"العربية (تونس)",
+		"tag":"ar-TN"
+	},
+	{
+		"country":"اليمن",
+		"language":"العربية",
+		"name":"العربية (اليمن)",
+		"tag":"ar-YE"
+	},
+	{
+		"country":"",
+		"language":"беларускі",
+		"name":"беларускі",
+		"tag":"be"
+	},
+	{
+		"country":"Беларусь",
+		"language":"беларускі",
+		"name":"беларускі (Беларусь)",
+		"tag":"be-BY"
+	},
+	{
+		"country":"",
+		"language":"български",
+		"name":"български",
+		"tag":"bg"
+	},
+	{
+		"country":"България",
+		"language":"български",
+		"name":"български (България)",
+		"tag":"bg-BG"
+	},
+	{
+		"country":"",
+		"language":"català",
+		"name":"català",
+		"tag":"ca"
+	},
+	{
+		"country":"Espanya",
+		"language":"català",
+		"name":"català (Espanya)",
+		"tag":"ca-ES"
+	},
+	{
+		"country":"",
+		"language":"čeština",
+		"name":"čeština",
+		"tag":"cs"
+	},
+	{
+		"country":"Česká republika",
+		"language":"čeština",
+		"name":"čeština (Česká republika)",
+		"tag":"cs-CZ"
+	},
+	{
+		"country":"",
+		"language":"Dansk",
+		"name":"Dansk",
+		"tag":"da"
+	},
+	{
+		"country":"Danmark",
+		"language":"Dansk",
+		"name":"Dansk (Danmark)",
+		"tag":"da-DK"
+	},
+	{
+		"country":"",
+		"language":"Deutsch",
+		"name":"Deutsch",
+		"tag":"de"
+	},
+	{
+		"country":"Österreich",
+		"language":"Deutsch",
+		"name":"Deutsch (Österreich)",
+		"tag":"de-AT"
+	},
+	{
+		"country":"Schweiz",
+		"language":"Deutsch",
+		"name":"Deutsch (Schweiz)",
+		"tag":"de-CH"
+	},
+	{
+		"country":"Deutschland",
+		"language":"Deutsch",
+		"name":"Deutsch (Deutschland)",
+		"tag":"de-DE"
+	},
+	{
+		"country":"Luxemburg",
+		"language":"Deutsch",
+		"name":"Deutsch (Luxemburg)",
+		"tag":"de-LU"
+	},
+	{
+		"country":"",
+		"language":"Ελληνικά",
+		"name":"Ελληνικά",
+		"tag":"el"
+	},
+	{
+		"country":"Κύπρος",
+		"language":"Ελληνικά",
+		"name":"Ελληνικά (Κύπρος)",
+		"tag":"el-CY"
+	},
+	{
+		"country":"Ελλάδα",
+		"language":"Ελληνικά",
+		"name":"Ελληνικά (Ελλάδα)",
+		"tag":"el-GR"
+	},
+	{
+		"country":"",
+		"language":"English",
+		"name":"English",
+		"tag":"en"
+	},
+	{
+		"country":"Australia",
+		"language":"English",
+		"name":"English (Australia)",
+		"tag":"en-AU"
+	},
+	{
+		"country":"Canada",
+		"language":"English",
+		"name":"English (Canada)",
+		"tag":"en-CA"
+	},
+	{
+		"country":"United Kingdom",
+		"language":"English",
+		"name":"English (United Kingdom)",
+		"tag":"en-GB"
+	},
+	{
+		"country":"Ireland",
+		"language":"English",
+		"name":"English (Ireland)",
+		"tag":"en-IE"
+	},
+	{
+		"country":"India",
+		"language":"English",
+		"name":"English (India)",
+		"tag":"en-IN"
+	},
+	{
+		"country":"Malta",
+		"language":"English",
+		"name":"English (Malta)",
+		"tag":"en-MT"
+	},
+	{
+		"country":"New Zealand",
+		"language":"English",
+		"name":"English (New Zealand)",
+		"tag":"en-NZ"
+	},
+	{
+		"country":"Philippines",
+		"language":"English",
+		"name":"English (Philippines)",
+		"tag":"en-PH"
+	},
+	{
+		"country":"Singapore",
+		"language":"English",
+		"name":"English (Singapore)",
+		"tag":"en-SG"
+	},
+	{
+		"country":"United States",
+		"language":"English",
+		"name":"English (United States)",
+		"tag":"en-US"
+	},
+	{
+		"country":"South Africa",
+		"language":"English",
+		"name":"English (South Africa)",
+		"tag":"en-ZA"
+	},
+	{
+		"country":"",
+		"language":"español",
+		"name":"español",
+		"tag":"es"
+	},
+	{
+		"country":"Argentina",
+		"language":"español",
+		"name":"español (Argentina)",
+		"tag":"es-AR"
+	},
+	{
+		"country":"Bolivia",
+		"language":"español",
+		"name":"español (Bolivia)",
+		"tag":"es-BO"
+	},
+	{
+		"country":"Chile",
+		"language":"español",
+		"name":"español (Chile)",
+		"tag":"es-CL"
+	},
+	{
+		"country":"Colombia",
+		"language":"español",
+		"name":"español (Colombia)",
+		"tag":"es-CO"
+	},
+	{
+		"country":"Costa Rica",
+		"language":"español",
+		"name":"español (Costa Rica)",
+		"tag":"es-CR"
+	},
+	{
+		"country":"República Dominicana",
+		"language":"español",
+		"name":"español (República Dominicana)",
+		"tag":"es-DO"
+	},
+	{
+		"country":"Ecuador",
+		"language":"español",
+		"name":"español (Ecuador)",
+		"tag":"es-EC"
+	},
+	{
+		"country":"España",
+		"language":"español",
+		"name":"español (España)",
+		"tag":"es-ES"
+	},
+	{
+		"country":"Guatemala",
+		"language":"español",
+		"name":"español (Guatemala)",
+		"tag":"es-GT"
+	},
+	{
+		"country":"Honduras",
+		"language":"español",
+		"name":"español (Honduras)",
+		"tag":"es-HN"
+	},
+	{
+		"country":"México",
+		"language":"español",
+		"name":"español (México)",
+		"tag":"es-MX"
+	},
+	{
+		"country":"Nicaragua",
+		"language":"español",
+		"name":"español (Nicaragua)",
+		"tag":"es-NI"
+	},
+	{
+		"country":"Panamá",
+		"language":"español",
+		"name":"español (Panamá)",
+		"tag":"es-PA"
+	},
+	{
+		"country":"Perú",
+		"language":"español",
+		"name":"español (Perú)",
+		"tag":"es-PE"
+	},
+	{
+		"country":"Puerto Rico",
+		"language":"español",
+		"name":"español (Puerto Rico)",
+		"tag":"es-PR"
+	},
+	{
+		"country":"Paraguay",
+		"language":"español",
+		"name":"español (Paraguay)",
+		"tag":"es-PY"
+	},
+	{
+		"country":"El Salvador",
+		"language":"español",
+		"name":"español (El Salvador)",
+		"tag":"es-SV"
+	},
+	{
+		"country":"Estados Unidos",
+		"language":"español",
+		"name":"español (Estados Unidos)",
+		"tag":"es-US"
+	},
+	{
+		"country":"Uruguay",
+		"language":"español",
+		"name":"español (Uruguay)",
+		"tag":"es-UY"
+	},
+	{
+		"country":"Venezuela",
+		"language":"español",
+		"name":"español (Venezuela)",
+		"tag":"es-VE"
+	},
+	{
+		"country":"",
+		"language":"Eesti",
+		"name":"Eesti",
+		"tag":"et"
+	},
+	{
+		"country":"Eesti",
+		"language":"Eesti",
+		"name":"Eesti (Eesti)",
+		"tag":"et-EE"
+	},
+	{
+		"country":"",
+		"language":"suomi",
+		"name":"suomi",
+		"tag":"fi"
+	},
+	{
+		"country":"Suomi",
+		"language":"suomi",
+		"name":"suomi (Suomi)",
+		"tag":"fi-FI"
+	},
+	{
+		"country":"",
+		"language":"français",
+		"name":"français",
+		"tag":"fr"
+	},
+	{
+		"country":"Belgique",
+		"language":"français",
+		"name":"français (Belgique)",
+		"tag":"fr-BE"
+	},
+	{
+		"country":"Canada",
+		"language":"français",
+		"name":"français (Canada)",
+		"tag":"fr-CA"
+	},
+	{
+		"country":"Suisse",
+		"language":"français",
+		"name":"français (Suisse)",
+		"tag":"fr-CH"
+	},
+	{
+		"country":"France",
+		"language":"français",
+		"name":"français (France)",
+		"tag":"fr-FR"
+	},
+	{
+		"country":"Luxembourg",
+		"language":"français",
+		"name":"français (Luxembourg)",
+		"tag":"fr-LU"
+	},
+	{
+		"country":"",
+		"language":"Gaeilge",
+		"name":"Gaeilge",
+		"tag":"ga"
+	},
+	{
+		"country":"Éire",
+		"language":"Gaeilge",
+		"name":"Gaeilge (Éire)",
+		"tag":"ga-IE"
+	},
+	{
+		"country":"",
+		"language":"עברית",
+		"name":"עברית",
+		"tag":"he"
+	},
+	{
+		"country":"ישראל",
+		"language":"עברית",
+		"name":"עברית (ישראל)",
+		"tag":"he-IL"
+	},
+	{
+		"country":"भारत",
+		"language":"हिंदी",
+		"name":"हिंदी (भारत)",
+		"tag":"hi-IN"
+	},
+	{
+		"country":"",
+		"language":"hrvatski",
+		"name":"hrvatski",
+		"tag":"hr"
+	},
+	{
+		"country":"Hrvatska",
+		"language":"hrvatski",
+		"name":"hrvatski (Hrvatska)",
+		"tag":"hr-HR"
+	},
+	{
+		"country":"",
+		"language":"magyar",
+		"name":"magyar",
+		"tag":"hu"
+	},
+	{
+		"country":"Magyarország",
+		"language":"magyar",
+		"name":"magyar (Magyarország)",
+		"tag":"hu-HU"
+	},
+	{
+		"country":"",
+		"language":"Bahasa Indonesia",
+		"name":"Bahasa Indonesia",
+		"tag":"id"
+	},
+	{
+		"country":"Indonesia",
+		"language":"Bahasa Indonesia",
+		"name":"Bahasa Indonesia (Indonesia)",
+		"tag":"id-ID"
+	},
+	{
+		"country":"",
+		"language":"íslenska",
+		"name":"íslenska",
+		"tag":"is"
+	},
+	{
+		"country":"Ísland",
+		"language":"íslenska",
+		"name":"íslenska (Ísland)",
+		"tag":"is-IS"
+	},
+	{
+		"country":"",
+		"language":"italiano",
+		"name":"italiano",
+		"tag":"it"
+	},
+	{
+		"country":"Svizzera",
+		"language":"italiano",
+		"name":"italiano (Svizzera)",
+		"tag":"it-CH"
+	},
+	{
+		"country":"Italia",
+		"language":"italiano",
+		"name":"italiano (Italia)",
+		"tag":"it-IT"
+	},
+	{
+		"country":"",
+		"language":"日本語",
+		"name":"日本語",
+		"tag":"ja"
+	},
+	{
+		"country":"日本",
+		"language":"日本語",
+		"name":"日本語 (日本)",
+		"tag":"ja-JP"
+	},
+	{
+		"country":"",
+		"language":"한국어",
+		"name":"한국어",
+		"tag":"ko"
+	},
+	{
+		"country":"대한민국",
+		"language":"한국어",
+		"name":"한국어 (대한민국)",
+		"tag":"ko-KR"
+	},
+	{
+		"country":"",
+		"language":"Lietuvių",
+		"name":"Lietuvių",
+		"tag":"lt"
+	},
+	{
+		"country":"Lietuva",
+		"language":"Lietuvių",
+		"name":"Lietuvių (Lietuva)",
+		"tag":"lt-LT"
+	},
+	{
+		"country":"",
+		"language":"Latviešu",
+		"name":"Latviešu",
+		"tag":"lv"
+	},
+	{
+		"country":"Latvija",
+		"language":"Latviešu",
+		"name":"Latviešu (Latvija)",
+		"tag":"lv-LV"
+	},
+	{
+		"country":"",
+		"language":"македонски",
+		"name":"македонски",
+		"tag":"mk"
+	},
+	{
+		"country":"Македонија",
+		"language":"македонски",
+		"name":"македонски (Македонија)",
+		"tag":"mk-MK"
+	},
+	{
+		"country":"",
+		"language":"Bahasa Melayu",
+		"name":"Bahasa Melayu",
+		"tag":"ms"
+	},
+	{
+		"country":"Malaysia",
+		"language":"Bahasa Melayu",
+		"name":"Bahasa Melayu (Malaysia)",
+		"tag":"ms-MY"
+	},
+	{
+		"country":"",
+		"language":"Malti",
+		"name":"Malti",
+		"tag":"mt"
+	},
+	{
+		"country":"Malta",
+		"language":"Malti",
+		"name":"Malti (Malta)",
+		"tag":"mt-MT"
+	},
+	{
+		"country":"",
+		"language":"Nederlands",
+		"name":"Nederlands",
+		"tag":"nl"
+	},
+	{
+		"country":"België",
+		"language":"Nederlands",
+		"name":"Nederlands (België)",
+		"tag":"nl-BE"
+	},
+	{
+		"country":"Nederland",
+		"language":"Nederlands",
+		"name":"Nederlands (Nederland)",
+		"tag":"nl-NL"
+	},
+	{
+		"country":"Norge",
+		"language":"norsk",
+		"name":"norsk (Norge,nynorsk)",
+		"tag":"nn-NO"
+	},
+	{
+		"country":"",
+		"language":"norsk",
+		"name":"norsk",
+		"tag":"no"
+	},
+	{
+		"country":"Norge",
+		"language":"norsk",
+		"name":"norsk (Norge)",
+		"tag":"no-NO"
+	},
+	{
+		"country":"",
+		"language":"polski",
+		"name":"polski",
+		"tag":"pl"
+	},
+	{
+		"country":"Polska",
+		"language":"polski",
+		"name":"polski (Polska)",
+		"tag":"pl-PL"
+	},
+	{
+		"country":"",
+		"language":"português",
+		"name":"português",
+		"tag":"pt"
+	},
+	{
+		"country":"Brasil",
+		"language":"português",
+		"name":"português (Brasil)",
+		"tag":"pt-BR"
+	},
+	{
+		"country":"Portugal",
+		"language":"português",
+		"name":"português (Portugal)",
+		"tag":"pt-PT"
+	},
+	{
+		"country":"",
+		"language":"română",
+		"name":"română",
+		"tag":"ro"
+	},
+	{
+		"country":"România",
+		"language":"română",
+		"name":"română (România)",
+		"tag":"ro-RO"
+	},
+	{
+		"country":"",
+		"language":"русский",
+		"name":"русский",
+		"tag":"ru"
+	},
+	{
+		"country":"Россия",
+		"language":"русский",
+		"name":"русский (Россия)",
+		"tag":"ru-RU"
+	},
+	{
+		"country":"",
+		"language":"Slovenčina",
+		"name":"Slovenčina",
+		"tag":"sk"
+	},
+	{
+		"country":"Slovenská republika",
+		"language":"Slovenčina",
+		"name":"Slovenčina (Slovenská republika)",
+		"tag":"sk-SK"
+	},
+	{
+		"country":"",
+		"language":"Slovenščina",
+		"name":"Slovenščina",
+		"tag":"sl"
+	},
+	{
+		"country":"Slovenija",
+		"language":"Slovenščina",
+		"name":"Slovenščina (Slovenija)",
+		"tag":"sl-SI"
+	},
+	{
+		"country":"",
+		"language":"shqipe",
+		"name":"shqipe",
+		"tag":"sq"
+	},
+	{
+		"country":"Shqipëria",
+		"language":"shqipe",
+		"name":"shqipe (Shqipëria)",
+		"tag":"sq-AL"
+	},
+	{
+		"country":"",
+		"language":"Српски",
+		"name":"Српски",
+		"tag":"sr"
+	},
+	{
+		"country":"Босна и Херцеговина",
+		"language":"Српски",
+		"name":"Српски (Босна и Херцеговина)",
+		"tag":"sr-BA"
+	},
+	{
+		"country":"Србија и Црна Гора",
+		"language":"Српски",
+		"name":"Српски (Србија и Црна Гора)",
+		"tag":"sr-CS"
+	},
+	{
+		"country":"Montenegro",
+		"language":"Српски",
+		"name":"Српски (Montenegro)",
+		"tag":"sr-ME"
+	},
+	{
+		"country":"Serbia",
+		"language":"Српски",
+		"name":"Српски (Serbia)",
+		"tag":"sr-RS"
+	},
+	{
+		"country":"",
+		"language":"svenska",
+		"name":"svenska",
+		"tag":"sv"
+	},
+	{
+		"country":"Sverige",
+		"language":"svenska",
+		"name":"svenska (Sverige)",
+		"tag":"sv-SE"
+	},
+	{
+		"country":"",
+		"language":"ไทย",
+		"name":"ไทย",
+		"tag":"th"
+	},
+	{
+		"country":"ประเทศไทย",
+		"language":"ไทย",
+		"name":"ไทย (ประเทศไทย)",
+		"tag":"th-TH"
+	},
+	{
+		"country":"",
+		"language":"Türkçe",
+		"name":"Türkçe",
+		"tag":"tr"
+	},
+	{
+		"country":"Türkiye",
+		"language":"Türkçe",
+		"name":"Türkçe (Türkiye)",
+		"tag":"tr-TR"
+	},
+	{
+		"country":"",
+		"language":"українська",
+		"name":"українська",
+		"tag":"uk"
+	},
+	{
+		"country":"Україна",
+		"language":"українська",
+		"name":"українська (Україна)",
+		"tag":"uk-UA"
+	},
+	{
+		"country":"",
+		"language":"Tiếng Việt",
+		"name":"Tiếng Việt",
+		"tag":"vi"
+	},
+	{
+		"country":"Việt Nam",
+		"language":"Tiếng Việt",
+		"name":"Tiếng Việt (Việt Nam)",
+		"tag":"vi-VN"
+	},
+	{
+		"country":"",
+		"language":"中文",
+		"name":"中文",
+		"tag":"zh"
+	},
+	{
+		"country":"中国",
+		"language":"中文",
+		"name":"中文 (中国)",
+		"tag":"zh-CN"
+	},
+	{
+		"country":"香港",
+		"language":"中文",
+		"name":"中文 (香港)",
+		"tag":"zh-HK"
+	},
+	{
+		"country":"新加坡",
+		"language":"中文",
+		"name":"中文 (新加坡)",
+		"tag":"zh-SG"
+	},
+	{
+		"country":"台灣",
+		"language":"中文",
+		"name":"中文 (台灣)",
+		"tag":"zh-TW"
+	}
+]

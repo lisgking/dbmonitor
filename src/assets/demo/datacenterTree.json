@@ -1,0 +1,96 @@
+[
+  {
+    "open": true,
+    "id": "0",
+    "pid": null,
+    "type": "dataCenter",
+    "name": "数据中心 id为0",
+    "title": "",
+    "dataset": {
+      "state": "active"
+    },
+    "href": "platform.html",
+    "children": [
+      {
+        "open": true,
+        "id": "1",
+        "pid": "0",
+        "type": "xcatPlatform",
+        "name": "XCat id为1",
+        "dataset": {
+          "state": "active"
+        },
+        "href": "host.html",
+        "children": [
+          {
+            "open": true,
+            "id": "11",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host id为11",
+            "dataset": {
+              "runningStatus": "0"
+            },
+            "href": "host.html",
+            "target": "_host"
+          },
+          {
+            "open": true,
+            "id": "12",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host host id为12",
+            "title": "aliqua proident commodo mollit officia cupidatat quis labore laborum amet tempor",
+            "dataset": {
+              "runningStatus": "1"
+            },
+            "href": "host.html",
+            "target": "_host"
+            
+          },
+          {
+            "open": true,
+            "id": "13",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host2",
+            "title": "aliqua proident commodo mollit officia cupidatat quis labore laborum amet tempor",
+            "dataset": {
+              "runningStatus": "2"
+            },
+            "href": "host.html",
+            "target": "_host"
+           
+          },
+          {
+            "open": true,
+            "id": "14",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host3",
+            "title": "aliqua proident commodo mollit officia cupidatat quis labore laborum amet tempor",
+            "dataset": {
+              "runningStatus": "3"
+            },
+            "href": "host.html",
+            "target": "_host"
+            
+          },
+          {
+            "open": true,
+            "id": "15",
+            "pid": "1",
+            "type": "xcatPlatformHost",
+            "name": "host4",
+            "title": "aliqua proident commodo mollit officia cupidatat quis labore laborum amet tempor",
+            "dataset": {
+              "runningStatus": "4"
+            },
+            "href": "host.html",
+            "target": "_host"
+          }
+        ]
+      }
+    ]
+  }
+]

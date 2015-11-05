@@ -1,0 +1,11 @@
+button i {
+	color: #6785b6;
+	padding-right: 4px;
+}
+#TSButton .ts-button button:hover{ 
+    background: -webkit-linear-gradient(top,  #6793d9, #4e82d5);
+    color:#fff;
+}
+button:hover i {
+    color:#fff;
+}

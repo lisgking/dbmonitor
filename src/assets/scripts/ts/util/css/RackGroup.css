@@ -1,0 +1,44 @@
+.racks{
+	border-spacing:10px 0;
+}
+.racks td{
+	border:2px solid #444;
+	border-top:none;
+}
+.racks tr:first-child>td{
+	border-top:2px solid #444;
+}
+.racks input{
+	margin:0;
+	padding:4px;
+	border:none;
+	width:120px;
+}
+.racks input:focus{
+	background-color:#f0f0fa;
+}
+.draggable-list{
+	width:160px;
+	height:15em;
+	overflow:auto;
+	list-style-type:none;
+	padding-left:0;
+	border:1px solid #ccc;
+	line-height:26px;
+	text-indent:0.5em;
+}
+.draggable-list>li{
+	display: block;
+}
+.draggable-list>li:hover{
+	background-color:#f0f0fa;
+}
+.draggable-list>li[draggable="true"]{
+	cursor: move;
+	color:#008800;
+	-webkit-user-drag: element;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

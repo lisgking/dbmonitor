@@ -1,0 +1,31 @@
+<div>
+    <form role="form" class="form-horizontal">
+        <div class="form-group">
+        	<label class="col-sm-3 control-label">username</label>
+	        <div class="col-sm-5">
+	            <input type="text" data-role="username" required="required" name="username" class="form-control">
+	        </div>
+	    </div>
+	    <div class="form-group">
+        	<label class="col-sm-3 control-label">no</label>
+	        <div class="col-sm-5">
+	            <input step=3 data-role="no" required="required" name="no" type="password" "form-control">
+	        </div>
+	    </div>
+	    <div class="form-group">
+        	<label class="col-sm-3 control-label">select</label>
+	        <div class="col-sm-5">
+	            <select required="required" name="level">
+	            	<option value=>--</option>
+	            	<option value=1>a</option>
+	            	<option value=2>b</option>
+	            	<option value=3>c</option>
+	            </select>
+	        </div>
+	    </div>
+        <div class="modal-footer my_modal_footer">
+            <button class="btn btn-default save btn-primary" type="button" data-role="submit">${submit}</button>
+            <button class="btn btn-default save" type="button" data-role="cancel">${cancel}</button>
+        </div>
+    </form>
+</div>

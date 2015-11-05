@@ -1,0 +1,123 @@
+.-ts-steps{
+	position:relative;
+
+}
+.-ts-step-labels{
+	position: relative;
+	overflow: hidden;
+	background-color: #dde5f2;
+	border-bottom: 1px solid #b3c2d5;
+	border-radius: 0px;
+}
+.-ts-step-names>td{
+	color:#444;
+	line-height:24px;
+	cursor:default;
+}
+.-ts-step-names>td.current{
+	font-weight:bold;
+}
+.-ts-step-names>td.current:before{
+	content:"[";
+	margin-right:5px;
+	vertical-align:text-top;
+	line-height:14px;
+}
+.-ts-step-names>td.current:after{
+	content:"]";
+	margin-left:5px;
+	vertical-align:text-top;
+	line-height:14px;
+}
+.-ts-step-names[data-step-length="2"]>td{
+	width:50%;
+}
+.-ts-step-names[data-step-length="3"]>td{
+	width:33.3%;
+}
+.-ts-step-names[data-step-length="4"]>td{
+	width:25%;
+}
+.-ts-step-names[data-step-length="5"]>td{
+	width:20%;
+}
+.-ts-step-names[data-step-length="6"]>td{
+	width:16.6%;
+}
+.-ts-step-names[data-step-length="7"]>td{
+	width:14.28%;
+}
+.-ts-step-names[data-step-length="8"]>td{
+	width:12.5%;
+}
+.-ts-steps-track{
+	position:absolute;
+	z-index:10;
+	border-top:1px solid #999;
+	top:34px;
+	left:50%;
+	width:640px;
+	margin-left:-320px;
+}
+.-ts-step-track{
+	width:720px;
+	margin-left:-360px;
+}
+.-ts-step-signs>td{
+	position:relative;
+	z-index:11;
+}
+.-ts-step-signs>td:after{
+	content:"";
+	display:inline-block;
+	width:10px;
+	height:10px;
+	text-align:center;
+	border:1px solid #666;
+	border-radius:16px;
+	background: #ECECEC;
+}
+.-ts-step-signs>td.current:after{
+	width: 15px;
+	height: 15px;
+	background-color: #ccc;
+}
+.-ts-step-signs>td.passed:after{
+	background-color: #51DC5F;
+}
+
+.-ts-step-panels{
+	position:relative;
+	margin-top:0px;
+	padding:14px;
+	overflow:hidden;
+	
+	border-radius:0px;
+}
+.-ts-step-panels>div{
+	height:280px;
+	overflow:auto;
+	display:none;
+	border-radius:5px;
+}
+.-ts-step-panels>div.current{
+	display:block;
+}
+.-ts-step-panels>div>p:first-child{
+	font-weight:bold;
+	font-size:14px;
+}
+
+.-ts-step-content{
+	
+}
+.-ts-wizard-caption{
+	line-height: 1.428571;
+    font-family: "微软雅黑";
+	font-size:14px;
+	font-weight:bold;
+	margin-top:0;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom: 1px solid #c4c8d1;
+}

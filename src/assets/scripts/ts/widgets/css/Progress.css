@@ -1,0 +1,10 @@
+.progress{ margin-bottom: 0; position:relative;}
+.des-text{
+    position: absolute;
+    top:0;
+    left: 6px;
+    z-index: 2;
+}
+.progress-bar-color{
+	background-color:#5cb85c;
+}

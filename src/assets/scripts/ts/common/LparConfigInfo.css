@@ -1,0 +1,18 @@
+#LparConfigInfo .thumbnail{
+    border: 0;
+}
+
+#LparConfigInfo .thumbnail .caption {
+    padding: 0;
+}
+
+#LparConfigInfo .thumbnail .caption h3{
+    margin-top: 5px;
+}
+
+#LparConfigInfo .my_modal_footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}

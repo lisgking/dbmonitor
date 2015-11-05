@@ -1,0 +1,253 @@
+body {
+  background: #eee;
+  margin: 0px;
+  padding: 0px;
+  font: 14px "微软雅黑";
+}
+header{
+    height: 55px;
+    position: fixed;
+}
+#sysLabel {
+    background-color: transparent;
+}
+#sysLabel:focus {
+    background-color: #333;
+    outline:none;
+}
+#usrLabel {
+    background-color: transparent;
+}
+#usrLabel:focus {
+    background-color: #333;
+    outline:none;
+}
+.page{
+    min-width:980px;
+}
+.brand {
+    font-family: georgia, serif;
+}
+.modal-backdrop.in {
+  opacity: 0.2;
+  filter: alpha(opacity=50);
+}
+.navbar{
+  height: 50px;
+}
+.navbar-brand {
+  padding: 11px 15px;
+}
+a.navbar-brand.logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+a.navbar-brand.logo small{
+    padding-left: 5px;
+    color: #ddd;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content-main{
+  padding: 10px 10px;
+}
+.content-main .tab-content{
+  padding: 0px;
+}
+a {
+    cursor: pointer;
+}
+a:focus, a:hover {
+    outline: 0px none;
+    text-decoration: none;
+}
+.navbar {
+  z-index: 20;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-shadow: 0px 0px 3px #cccccc;
+  -moz-box-shadow: 0px 0px 3px #cccccc;
+  box-shadow: 0px 0px 3px #cccccc;
+}
+.navbar .brand {
+  text-shadow: none;
+}
+.navbar .navbar-inner {
+  background: #438eb9;
+  padding: 0em 1em;
+  margin: 0px;
+  height:50px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 0px;
+  border-bottom: none;
+}
+.navbar .nav {
+  margin: 0em;
+  margin-right: -1em;
+}
+.navbar .nav > li > a {
+  color: #fff;
+  text-shadow: none;
+}
+.navbar .nav > li:hover {
+  background-color: #444;
+}
+.navbar .nav > li > a:hover {
+  color: #fff;
+  background-color:transparent;
+}
+.navbar .dropdown-menu a:hover {
+  background: none;
+  color: #000;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle {
+  background-color: #444;
+  color: #fff;
+}
+.content{
+  position: absolute;
+  overflow: auto;
+  min-height:520px;
+  top:50px;
+  left:0;
+  right:0;
+  bottom:50px;
+}
+.content>.tab-pane{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.content>.tab-pane>iframe{
+    border:none;
+    width: 100%;
+    height:99.6%;
+}
+/* homepage */
+.homepage{
+    margin:15px;
+}
+.homepage .col-md-4{
+    padding:0;
+}
+@media (min-width: 992px) {
+    .homepage .col-md-4:first-child{
+        padding-right:10px;
+    }
+    .homepage .col-md-4:nth-child(2){
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .homepage .col-md-4:nth-child(3){
+        padding-left:10px;
+    }
+}
+.col-md-4 .panel-info>.panel-body{
+    min-height:200px;
+    height:auto;
+    height:-webkit-calc(100% - 38px);
+    height:-moz-calc(100% - 38px);
+    height:calc(100% - 38px);
+}
+footer {
+    position: fixed;
+    z-index: 100;
+    bottom:0;
+    width:100%;
+    color: #666;
+    background: #fff;
+    border-top: 5px solid #5090C1;
+}
+.panel .panel-heading .btn{
+    margin-top: -5px;
+}
+.panel.full{
+    position: fixed;
+    top: 51px;
+    bottom: 36px;
+    left: 0;
+    right: 0;
+    z-index: 19;
+}
+.panel-heading {
+    padding: 8px 15px;
+}
+.panel {
+    position:relative;
+    margin-bottom: 0;
+}
+.panel-default {
+    border: 1px solid #CCC;
+}
+.panel-default > .panel-heading {
+    background: #F7F7F7;
+    color: #000;
+}
+.btn{
+    padding: 6px 10px;
+    font-size: 14px;
+}
+.btn-default{
+    border-color: #007aff;
+    font-size: 14px;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+    color: #FFF;
+    background-color: #428BCA;
+    border-color: #357EBD;
+    outline: 0px none !important;
+}
+.dl-horizontal dt, .dl-horizontal dd{
+  padding-top: 5px;
+}
+.has-error.form-control {
+    border-color: #A94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.form-group .error-message{
+    color: #A94442;
+    height:1em;
+}
+.form-second-col .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    width: 50%;
+    float: left;
+}
+.form-second-col .form-title{
+    width: 100%;
+    clear: both;
+}
+.form-second-col .form-select-input{
+    width: 100%;
+    clear: both;
+}
+.form-second-col .form-group label.col-sm-3 {
+    width: 120px;
+}
+.form-second-col .form-group .col-sm-6 {
+    width: 60%;
+}
+.app-icon{
+    width: 64px;
+    height: 64px;
+}
+.table > thead > tr > th {
+  background-color: rgb(234, 234, 234);
+  border: 1px solid #dddddd;
+  border-bottom: 1px solid rgb(212,212,212);
+  height: 30px;
+  padding: 5px;
+}

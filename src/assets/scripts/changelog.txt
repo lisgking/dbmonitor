@@ -1,0 +1,3 @@
+[file]knockout.validation.js:667
+[orig]testVal = val.replace(stringTrimRegEx, '');
+[new]//testVal = val.replace(stringTrimRegEx, '');

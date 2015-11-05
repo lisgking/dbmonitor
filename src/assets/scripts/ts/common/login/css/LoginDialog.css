@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+.png-bg {
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    background: url(./images/patternbg.png) repeat #fff;
+    position: fixed;
+    z-index: 5000;
+}
+#loginDialog .login-top {
+    height: 58px;
+    background-color: #516fb2;
+}
+#loginDialog .login-content {
+    width: 350px;
+    padding: 5px;
+    background-color: #fff;
+    margin: 7% auto 0 auto;
+    border-radius: 2px;
+    box-shadow: 0 0px 2px rgba(0,0,0,0.3);
+}
+#loginDialog .login-content div.text-case { display:block; position:relative;
+margin-bottom:26px;} 
+#loginDialog .login-content .text-title {
+    color: #f9f9f9;
+    font-family: Arial, "微软雅黑";
+    font: 14px "微软雅黑";
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 36px;
+    position: relative;
+}
+#loginDialog .language-select {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+#loginDialog .login-content .text-input {
+   padding: 15px 10px;
+   border: 0;
+   font-size: 14px;
+   width: 100%;
+   box-shadow: none;
+   color: #666;
+   font-family: Arial, Helvetica, sans-serif;
+   border-radius: 0 2px 2px 0;
+}
+#loginDialog .login-content .select-yuyan {
+    background-color: #7595d2;
+    border: 0;
+    color: floralwhite;
+    font: 14px "微软雅黑";
+}
+#loginDialog .submit-part {
+    position: relative;
+}
+#loginDialog .button {
+    background: #f0ad4e url(./images/btngrad.png) repeat-x top left;
+    border: 0;
+    padding: 15px 0;
+    text-align: center;
+    font-family: Arial, "微软雅黑";
+    font: 14px "微软雅黑";
+    font-weight: normal;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+#loginDialog .pdlogo {
+    text-align: center;
+}
+#loginDialog .pdlogo img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    padding: 4px;
+    border: 1px solid #eaeaea;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+#loginDialog .pdlogo p {
+    color: #999;
+    font-size: 12px;
+    margin-top: 16px;
+    padding: 4px 0;
+    background-color: #eaeaea;
+}
+.login-inner{
+    padding: 20px;
+    background: #7595d2 url(./images/patternbg.png) repeat;
+    border-radius: 0 0 2px 2px;
+}
+.login-content * {
+    font: 14px "微软雅黑";
+}
+.login-content form{
+    margin-top:20px;    
+}
+.login-content .text-username {
+    background: #eee url(./images/icon-loginman.png) no-repeat 13px center;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+}
+.login-content .usernameinner {
+    margin-left: 45px;
+    border-left: 1px solid #ddd;
+    background: #fff;
+}
+.login-content .text-password{
+    background: #eee url(./images/password.png) no-repeat 13px center;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.login-content .passwordinner {
+    margin-left: 45px;
+    border-left: 1px solid #ddd;
+    background: #fff;
+}
+#loginDialog .login-content  .text-warn {
+    margin-top: 20px;
+    color: #ccc;
+    font: normal 11px "微软雅黑";
+    line-height: 12px;
+}
+div.checker {
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+div.checker span {
+    background-position: 0px -260px;
+    display: inline-block;
+    text-align: center;
+    height: 19px;
+    width: 19px;
+    background-image: url(./images/sprite.png);
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+}
+div.checker input {
+    display: inline-block;
+    background: none;
+    width: 19px;
+    height: 19px;
+    opacity:0;
+}
+div.checker:active span{
+    background-position: -114px -260px;
+}
+div.checker span.checked{
+    background-position: -114px -260px;
+}
+#loginDialog .pull-warn {
+    color: #f0ad4e;
+}
+#loginDialog .return-message {
+    color: #f0ad43;
+    float: right;
+}

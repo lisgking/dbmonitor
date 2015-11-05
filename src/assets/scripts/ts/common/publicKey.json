@@ -1,0 +1,12 @@
+{
+	"publickey": {
+		"coeff": "",
+		"d": "",
+		"dmp1": "",
+		"dmq1": "",
+		"e": "10001",
+		"n": "ca634b40537dc79b2ed7b55419374e0f14deb7e65a78b35c27c7d51f4830463321239c91f28f99082cde7a1e4e7f1a3e5bb942847dd10481bf4d8648cc4907266d45d5df791b8e43eb0e16dcd4fe8f7bef767ae493ebbd63074f5e8914d09b063eb822ab5be1baae3091f0f7a6b823a5d10b3c4dbad03a3e781359374db30097",
+		"p": "",
+		"q": ""
+	}
+}

@@ -1,0 +1,39 @@
+<div class="setupLparTrust">
+    <form role="form" class="form-horizontal">
+        <div class="form-group">
+	        <label class="col-sm-4 control-label">${username}</label>
+	        <div class="col-sm-5">
+	            <input type="text" class="form-control" data-role="userName" name="userName" required="required"
+	            	pattern="^[a-z0-9_-]{3,16}$"
+	            	validateText="${please enter the correct user name format}"
+	            	validateFunText="${please enter your user name}"
+	            >
+	        </div>
+	    </div>
+	    <div class="form-group">
+	        <label class="col-sm-4 control-label">${password}</label>
+	        <div class="col-sm-5">
+	            <input type="password" class="form-control" data-role="password" name="password" required="required"
+	            	pattern="^[a-z0-9_-]{3,16}$"
+	            	validateText="${please enter the correct user name format}"
+	            	validateFunText="${please enter your user name}"
+	            >
+	        </div>
+	    </div>
+	    <div class="form-group">
+	        <label class="col-sm-4 control-label">${adapter}</label>
+	        <div class="col-sm-5">
+	            <select name="netCardInfo" 
+	            		required="required" 
+	            		emptyMsg="${No network card information, please go to the edit partition configuration information card}"
+	            		data-role="netCardInfo"
+	            		class="form-control">
+	            </select>
+	        </div>
+	    </div>
+        <div class="modal-footer my_modal_footer">
+            <button class="btn btn-default save btn-primary" type="button" data-role="submit">${submit}</button>
+            <button class="btn btn-default save" type="button" data-role="cancel">${cancel}</button>
+        </div>
+    </form>
+</div>

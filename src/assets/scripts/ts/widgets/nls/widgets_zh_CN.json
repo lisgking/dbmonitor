@@ -1,0 +1,17 @@
+{
+	"*":{
+		
+	},
+	"TSDataGrid":{
+		"PageSize":"每页大小",
+		"PageNo":"页码",
+		"PageInfo":"当前第$startRow至$endRow条，共$totalRows条",
+		"SortBy":"排序",
+		"SearchBy":"搜索",
+		"AnyFieldTheFollowing":"不限",
+		"Unlimited":"不限",
+		"Keywords":"关键字",
+		"ShowColumnsAll":"显示所有列",
+		"ResetColumns":"重置所有列设置"
+	}
+}

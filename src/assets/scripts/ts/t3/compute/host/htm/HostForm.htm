@@ -1,0 +1,32 @@
+<form action="">
+	<table>
+	<tr>
+		<td><label>Platform IP</label></td>
+		<td><input type="text" data-role="ip"
+				required="required" maxlength="32" pattern="[A-Za-z]\w*" /></td>
+	</tr>
+	<tr>
+		<td><label>User</label></td>
+		<td><input type="text" data-role="user"
+				required="required" maxlength="32" pattern="[A-Za-z \xc0-\xff\u4e00-\u9fa5]" /></td>
+	</tr>
+	<tr>
+		<td><label>Password</label></td>
+		<td><input type="text" data-role="password" /></td>
+	</tr>
+	<tr>
+		<td><label></label></td>
+		<td>
+			Download this <a href="services/sheets/host_template.csv" target="_blank">template</a>,
+			enter your hosts' info, then upload it with the file input below.
+		</td>
+	</tr>
+	<tr>
+		<td><label>Template</label></td>
+		<td>
+			<input type="file" data-role="file" />
+			<input type="button" data-role="submit" />
+		</td>
+	</tr>
+	</table>
+</form>

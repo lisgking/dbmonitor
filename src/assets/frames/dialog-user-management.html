@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>User Management</title>
+	<base href="../../" /><!--[if IE]>
+	<script>(function(b){if(b)b.href=b.href;}(document.getElementsByTagName("base")[0]));</script><![endif]-->
+	<link rel="stylesheet" href="assets/frames/styles/global.css" />
+	<link rel="stylesheet" href="assets/frames/styles/dialog/dialog.css" />
+	<link rel="stylesheet" href="assets/frames/styles/dialog/dialog-install-component.css" />
+</head>
+<body>
+	<div class="dialog-install-component">
+		<div class="dialog-head">
+			<h2>Install new components</h2>
+		</div>
+		<div class="dialog-body">
+			<div id="userForm"></div>
+		</div>
+		<div class="dialog-foot clear-after">
+			<div class="button-group">
+				<input type="button" value="Cancel" id="btn_cancel" />
+				<input type="button" value="Previous" id="btn_prev" disabled="disabled" />
+				<input type="button" value="Next" id="btn_next" />
+				<input type="button" value="Submit" id="btn_submit" class="hidden" />
+			</div>
+		</div>
+	</div>
+<script>
+var require= {
+	baseUrl:"assets/scripts",
+	config: {
+		"dojo/css": {
+			baseUrl:"assets/scripts"
+		},
+		"dojo/nls": {
+			baseUrl:"assets/scripts",
+			lang:document.documentElement.lang
+		},
+		"dojo/json": {
+			baseUrl:"assets/scripts"
+		}
+	},
+	packages:[
+		{name:"ts/t3",location:"../../myassets/ts/t3"}
+	],
+	shim:{
+		"ts/widgets/TSResNavTree":["ts/dom/ProtoExtension"]
+	},
+	skipDataMain:true
+}; 
+</script><!--[if IE]>
+<script src="assets/scripts/require.js"></script><![endif]--><!--[if !IE]><!-->
+<script src="assets/scripts/alameda.js"></script><!--<![endif]-->
+<script src="assets/scripts/jquery.js"></script>
+<script src="assets/scripts/v8natives.js"></script>
+<script>
+require(["dojo/domReady!"],function(doc){
+	require(["ts/t3/account/TSUserForm"],function(TSUserForm){
+		var form=new TSUserForm();
+		form.placeAt($("#userForm")[0]);
+		window.userForm=form;
+	});
+});
+</script>
+</body>
+</html>

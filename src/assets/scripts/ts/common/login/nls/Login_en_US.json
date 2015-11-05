@@ -1,0 +1,18 @@
+{
+	"userId":"Account ID",
+	"password":"Password",
+	"language":"Language",
+	
+	"login_title":"Login to XEAP",
+	"rememberMe":"Remember me",
+	"Login":"Login",
+	"Cancel":"Cancel",
+	"Loading":"Loading..",
+	
+	"login_FAIL":"Fail to Login!",
+	"logout_FAIL":"Fail to Logout!",
+	"userName_VALUEMISSING":"Account name required",
+	"userName_PATTERNMISMATCH":"Invalid user name, Illegal format",
+	"password_VALUEMISSING":"Password required",
+	"password_PATTERNMISMATCH":"Invalid password, Illegal format"
+}

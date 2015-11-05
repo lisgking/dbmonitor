@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="-ts-datagrid">
+	<div class="-ts-gtoolbar" data-role="gtoolbar">
+		<input type="button" value="Add" />
+		<input type="button" value="Edit" />
+		<input type="button" value="Remove" />
+	</div>
+	<div class="-ts-ghead" data-role="ghead">
+		<table class="-ts-ghead-table">
+		<thead data-role="thead">
+			<tr>
+				<th>&#160;</th>
+			</tr>
+		</thead>
+		</table>
+	</div>
+	<div class="-ts-gbody" data-role="gbody">
+		<div class="-ts-gbody-table-wrap">
+		<table class="-ts-gbody-table">
+		<tbody data-role="tbody">
+			<tr>
+				<td>&#160;</td>
+			</tr>
+		</tbody>
+		</table>
+		</div>
+	</div>
+	<div class="-ts-gfoot" data-role="gfoot">
+		<table class="-ts-gfoot-table">
+		<tfoot data-role="tfoot">
+			<tr>
+				<td>
+					<label>
+						Page:<input type="number" name="page" value="1" required="required" step="1" min="1" max="999" />
+					</label>
+					<input type="button" value="Go" />
+					<select name="rp">
+						<option value="10">10</option>
+						<option value="20" selected="selected">20</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+					</select>
+					<label>
+						Search:<select name="qtype" data-role="searchBy"></select>
+						<input type="search" name="query" placeholder="Search" data-role="search" />
+					</label>
+					<label>
+						Sort By:
+						<select name="sortname"></select>
+					</label>
+					<label><input type="radio" name="sortorder" value="asc" checked="checked" />Ascending</label>
+					<label><input type="radio" name="sortorder" value="desc" />descending</label>
+				</td>
+			</tr>
+		</tfoot>
+		</table>
+	</div>
+</div>

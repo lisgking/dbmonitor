@@ -1,0 +1,42 @@
+/*~~~~~~~~~~dialog-steps~~~~~~~~~~*/
+.dialog-new-cronexp{
+	
+}
+.dialog-new-cronexp .dialog-steps td{
+	width:14%;
+}
+.dialog-new-cronexp .steps-track{
+	width:605px;
+	margin-left:-303px;
+}
+
+label input[type="radio"],
+label input[type="checkbox"]{
+	vertical-align:middle;
+	margin-right:5px;
+}
+
+.tabs_list{
+	padding:0 10px;
+	border-bottom:2px groove #fff;
+}
+.tabs_list label{
+	margin-right:20px;
+}
+.content_panels{
+	
+}
+.content_panels>div{
+	margin:10px;
+	display:none;
+}
+.content_panels>div.current{
+	display:block;
+}
+
+.field_options label{
+	display:inline-block;
+	min-width:60px;
+	margin-right:10px;
+}
+

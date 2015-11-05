@@ -1,0 +1,8 @@
+{
+    "hostName":"主机",
+    "platform":"平台",
+    "ip":"IP",
+    "username":"用户",
+    "userpass":"密码",
+    "description":"描述"
+}

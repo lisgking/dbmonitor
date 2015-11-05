@@ -1,0 +1,17 @@
+{
+	"*":{
+		
+	},
+	"TSDataGrid":{
+		"PageSize":"Page Size",
+		"PageNo":"Page No",
+		"PageInfo":"Current $startRow to $endRow of $totalRows",
+		"SortBy":"Sort By",
+		"SearchBy":"Search By",
+		"AnyFieldTheFollowing":"Any",
+		"Unlimited":"Unlimited",
+		"Keywords":"Keywords",
+		"ShowColumnsAll":"Show Columns All",
+		"ResetColumns":"Reset Columns"
+	}
+}

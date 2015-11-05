@@ -1,0 +1,53 @@
+.ts_progress{
+	width:30px;
+	height:30px;
+	position:relative;
+	overflow:hidden;
+	background: url(images/white.png) no-repeat 0 0;
+	background-size: cover;
+}
+.ts_progress .left,.ts_progress .right,.ts_progress .text{
+	width:30px;
+	height:30px;
+}
+.ts_progress .text{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:41;
+	color:#333;
+	font:8px/40px '微软雅黑';
+	line-height:30px;
+	text-align:center;
+}
+.ts_progress .mask{
+	z-index:40;
+	width:15px;
+	height:30px;
+	background:url(images/white.png) no-repeat 0 0;
+	background-size:cover;
+	position:absolute;
+	top:0;
+}
+.ts_progress .bg{
+	width:15px;
+	height:30px;
+	position:absolute;
+	top:0;
+}
+.ts_progress .bg{
+	background:url(images/green.png) no-repeat 0 0;
+	background-size: cover;
+	height: 30px;
+	width: 15px;
+}
+.ts_progress .mask,.ts_progress .left .bg{
+	left:0;
+}
+.ts_progress .right{
+	display:none;
+}
+.ts_progress .right .bg{
+	background-position:right top;
+	right:0;
+}

@@ -1,0 +1,472 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+	font: 14px "微软雅黑";
+}
+a {
+    cursor: pointer;
+}
+a:focus, a:hover {
+    outline: 0px none;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding: 25px;
+    font: 14px "微软雅黑";
+}
+.container {
+    height: auto;
+}
+.btn-menu {
+    height: 100%;
+    border-width: 50px 0 0 84px;
+    background-color: #fff;
+}
+.btn-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-style: solid;
+    border-color: #7595d2;
+}
+.pd-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+    z-index: 20;
+    background-color: #7595d2;
+}
+.pd-logo {
+	float:left;
+    width: 306px;
+    height: 31px;
+}
+.btn-menu div.left-float-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    width: 84px;
+    list-style: none;
+}
+
+.button-menu {
+    float: right;
+    height: 30px;
+    position:relative;
+    margin-top: 10px;
+    margin-right: 14px;
+}
+.btn-administrator, .btn-system { 
+	float: right;
+	position:relative;
+	margin-left: 14px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+.btn-control a{ padding:5px;}
+button.btn-sys {
+	width:30px;
+	height: 30px;
+    border: 0;
+	border-radius:50%;
+	background: url(../images/icon-xx.png) no-repeat 7px 8px #6589d5;
+	font-style: normal;
+	color: #fff;
+	text-indent: 6px;
+	cursor:pointer;
+}
+button.btn-sys:hover {
+	background: url(../images/icon-xx.png) no-repeat 7px 8px #43c6e7;
+}
+button.btn-admin {
+	width:30px;
+	height: 30px;
+	border:0;
+	border-radius:50%;
+	background: url(../images/icon-ad.png) no-repeat 7px 7px #6589d5;
+	font-style: normal;
+	color: #fff;
+	text-indent: 6px;
+	cursor:pointer;
+}
+button.btn-admin:hover {
+	background: url(../images/icon-ad.png) no-repeat 7px 7px #43c6e7;
+}
+.btn-sys:hover, .btn-admin:hover, .btn-sys.active, .btn-admin.active 
+.btn-sys:focus, .btn-admin:focus, .btn:active, .btn:focus {
+    background-color:#43c6e7;
+}
+.btn-sys:active, .btn-admin:active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.dropdown-menu-tz span {
+    display: block;
+    line-height: 1.428571429;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left:auto;
+    right:0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.open > .dropdown-menu {
+    border-radius: 0;
+    display: block;
+    padding: 0;
+    margin-top: 9px;
+}
+.dropdown-menu-tz {
+    background-color: #f6f6f6;
+}
+.dropdown-menu-tz > li > a {
+    display: block;
+    padding: 10px 20px 10px 14px;
+    text-decoration: none;
+    text-indent: 24px;
+    border-bottom: 1px solid #c8c7cc;
+    color: #848484;
+    background-color: #f6f6f6;
+}
+.dropdown-menu-tz > li > a:hover {
+    background-color: #fff;
+    color: #262626;
+}
+.dropdown-menu-tz >li > a:active {
+    background-color: #fff;
+    color: #262626;
+}
+.dropdown-menu-tz > li > a > span{
+    font: normal 14px "微软雅黑";
+}
+.dropdown-menu-tz > li > a > span.icon-sz,
+.dropdown-menu-tz > li > a:hover > span.icon-sz {
+    background: url(../images/icon-right16.png) no-repeat 0 2px;
+}
+.dropdown-menu-tz > li > a > span.icon-czxt, 
+.dropdown-menu-tz > li > a:hover > span.icon-czxt {
+    background: url(../images/icon-right16.png) no-repeat 0 -19px;
+}
+.dropdown-menu-tz > li > a > span.icon-zh,
+.dropdown-menu-tz > li > a:hover > span.icon-zh {
+    background: url(../images/icon-right16.png) no-repeat 0 -42px;
+}
+.dropdown-menu-tz > li > a > span.icon-bsyq,
+.dropdown-menu-tz > li > a:hover > span.icon-bsyq {
+    background: url(../images/icon-right16.png) no-repeat 0 -64px;
+}
+.dropdown-menu-tz > li > a > span.icon-rwjh,
+.dropdown-menu-tz > li > a:hover > span.icon-rwjh {
+    background: url(../images/icon-right16.png) no-repeat 0 -86px;
+}
+.dropdown-menu-tz > li > a > span.icon-xgdlmm,
+.dropdown-menu-tz > li > a:hover > span.icon-xgdlmm {
+    background: url(../images/icon-right16.png) no-repeat 0 -110px;
+}
+.dropdown-menu-tz > li > a > span.icon-zx,
+.dropdown-menu-tz > li > a:hover > span.icon-zx {
+    background: url(../images/icon-right16.png) no-repeat 0 -132px;
+}
+
+.btn-menu ul.left-float-nav li {
+    display: block;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.btn-menu div.left-float-nav li.active {
+    background-color: #c8d4ed;
+}
+.btn-menu div.left-float-nav li a {
+    display: block;
+    width: 100%;
+    height: 62px;
+    text-align: center;
+    position: relative;
+}
+.btn-menu div.left-float-nav li a img {
+    padding: 16px 0;
+}
+.btn-menu div.left-float-nav li a:hover {
+    background-color: #90aadb;
+}
+.btn-menu div.left-float-nav li.active a img {
+    opacity: 1.0;
+}
+.btn-menu div.left-float-nav li a:hover button.close {
+    background:url(../images/icon-close8.png) no-repeat 0 0;
+    width:8px;
+    height:8px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    border: none;
+    opacity: 1;
+}
+.btn-menu div.left-float-nav li a button.close:hover{
+    background:url(../images/icon-close8s.png) no-repeat 0 0;
+    z-index:2;
+}
+.con-all {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.con-top {
+    height: 60%;
+    background-color: #fafafa;
+}
+.con-down {
+    height: 40%;
+}
+.use-con {
+	height: 78%;
+    width: 100%;
+    overflow: auto;
+}
+.use-con ul {
+    list-style: none;
+    position: relative;
+    padding-top: 23px;
+    padding-left: 32px;
+    /* top: 23px;
+    left: 32px; */
+}
+.use-con li {
+    float: left;
+    margin-right: 50px;
+    text-align: center;
+}
+.use-con li span {
+    margin-top: 14px;
+    display: block;
+}
+.use-con li a {
+    color: #666;
+}
+.container-app{
+	height:100%;
+}
+header.headline-apply {
+    position:relative;
+    background-color: #fff;
+    height:10%;
+    min-height: 40px;
+	border-bottom: 1px solid #ececec;
+}
+.btn-control {
+    position:relative;
+    float: right;
+    top: 8px;
+    right:12px;
+}
+.btn-control ul {
+    list-style: none;
+    margin-right: 0px;
+}
+.btn-control li {
+    float: left;
+    margin-right: 2px;
+}
+.btn-control li a {
+    display: block;
+    padding: 4px;
+}
+.btn-control li a:hover {
+    display: block;
+    background-color: #e0e7f3;
+}
+
+.btn-control li a.icon-list-t {
+    background:url(../images/icon-list.png) no-repeat center;
+    display: block;
+    width:14px;
+    height:14px;
+    padding: 12px;
+}
+.btn-control li a.icon-list-t:hover {
+    background:url(../images/icon-listh.png) no-repeat center;
+}
+.btn-control li a.icon-list-t.active {
+    background:url(../images/icon-listh.png) no-repeat center;
+}
+.btn-control li a.icon-icon {
+    background:url(../images/icon-icon.png) no-repeat center;
+    display: block;
+    width:14px;
+    height:14px;
+    padding: 12px;
+}
+.btn-control li a.icon-icon:hover {
+    background:url(../images/icon-iconh.png) no-repeat center;
+}
+.btn-control li a.icon-icon.active {
+    background:url(../images/icon-iconh.png) no-repeat center;
+}
+.btn-control li a.icon-big-blue {
+    background:url(../images/icon-big-blue.png) no-repeat center;
+    display: block;
+    width:14px;
+    height:14px;
+    padding: 12px;
+}
+.btn-control li a.icon-big-blue:hover {
+    background:url(../images/icon-big-blueh.png) no-repeat center;
+}
+.btn-control li a.icon-big-bluef {
+    background:url(../images/icon-big-bluef.png) no-repeat center;
+    display: block;
+    width:14px;
+    height:14px;
+    padding: 12px;
+}
+.btn-control li a.icon-big-bluef:hover {
+    background:url(../images/icon-big-bluehf.png) no-repeat center;
+}
+.app-icon-list {
+    width: 24px;
+    height: 24px;
+    background: url(../images/icon-list.png) no-repeat 16px 16px;
+}
+.platform, .bundle, .logs {
+    width: 33.3%;
+    height:100%;
+    float: left;
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #fff;
+}
+.platform div.p, .bundle div.p, .logs div.p {
+    background-color: #dadfe5;
+    height: 40px;
+    position: relative;
+}
+.platform>.p>span {
+    background: url(../images/icon-pintai.png) no-repeat no-repeat 16px 10px;
+    line-height: 40px;
+    text-indent: 40px;
+    display: block;
+    float: left;
+    width: 60%;
+}
+.bundle>.p>span {
+    background: url(../images/icon-ruanjian.png) no-repeat no-repeat 16px 10px;
+    line-height: 40px;
+    text-indent: 40px;
+    display: block;
+    float: left;
+    width: 60%;
+}
+.logs>.p>span {
+    background: url(../images/icon-rizhi.png) no-repeat no-repeat 16px 10px;
+    line-height: 40px;
+    text-indent: 40px;
+    display: block;
+    float: left;
+    width: 60%;
+}
+.btn-big-white a {
+    display: block;
+    padding: 4px;
+    border-radius: 2px;
+}
+.btn-big-blue a.icon-big-blue{
+    display: block;
+    width:21px;
+    height:21px;
+    background:url(../images/icon-big-blue.png) no-repeat 1px 0px;
+}
+.btn-big-blue a.icon-big-bluef{
+    display: block;
+    width:21px;
+    height:21px;
+    background:url(../images/icon-big-bluef.png) no-repeat 1px 0px;
+}
+.btn-big-blue a.icon-big-blue:hover {
+    background: url(../images/icon-big-blueh.png) no-repeat 1px 0px;
+}
+.btn-big-blue  a.icon-big-bluef:hover {
+    background: url(../images/icon-big-bluehf.png) no-repeat 1px 0px;
+}
+.btn-big-white {
+    float: right;
+    position: relative;
+    padding: 13px;
+}
+.btn-big-white a {
+    display: block;
+    padding: 4px;
+    border-radius: 2px;
+}
+.btn-big-white a:hover {
+    display: block;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: #cad6e6;
+}
+.btn-big-blue a:hover {
+    display: block;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: #dadfe5;
+}
+.headline-apply span {
+    background: url(../images/icon-yinyong.png) no-repeat 16px 10px;
+    line-height: 40px;
+    text-indent: 40px;
+    display: block;
+    width: 40%;
+    float: left;
+}
+.platform {
+    border-left:1px solid #dbdbdb;
+}
+.form-second-col .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    width: 50%;
+    float: left;
+}
+.full div.p{
+	background-color:#fff;
+	border-bottom:1px solid #ececec;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    color: #fff;
+    background-color: #6082ca;
+    outline: 0px none !important;
+}
+.btn-sys img,
+.btn-admin img{
+	margin-bottom: 6px;
+}
