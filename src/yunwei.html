@@ -26,7 +26,7 @@
     </div>
     <div id="dd" class="navbar-inner">
       <h5>项目列表</h5>
-      <div><a href="#"><img src="image/icon-zoom.png" /></a></div>
+      <div><a id="list" href="#"><img src="image/icon-zoom.png" /></a></div>
       <!-- 左侧弹出菜单 --->
 
 <div class="demo-modal active">
@@ -144,20 +144,17 @@
       <table class="table">
         <thead>
           <tr>
-            <td class="text-kong">主机</td>
-            <td>标签</td>
-            <td>连接</td>
-            <td>角色</td>
-            <td>运行时间</td>
-            <td>版本</td>
-            <td>连接线程数</td>
-            <td>活动线程数</td>
-            <td>等待线程数</td>
-            <td>接收</td>
-            <td>发送</td>
-            <td>每秒查询</td>
-            <td>每秒事务</td>
-            <td>图表</td>
+            <td class="text-kong">实例名</td>
+            <td>主机</td>
+            <td>归属系统</td>
+            <td>告警数</td>
+            <td>checkpoint时长</td>
+            <td>等待队列</td>
+            <td>每秒事务数</td>
+            <td>连接数</td>
+            <td>cpu</td>
+            <td>内存</td>
+            
           </tr>
         </thead>
         <tbody>
@@ -172,10 +169,7 @@
             <td>2</td>
             <td>0</td>
             <td>4KB </td>
-            <td>10KB</td>
-            <td>73</td>
-            <td>8</td>  
-            <td><img src="image/icon-tb.png" /></td>
+            
           </tr>
           <tr>
             <td class="text-kong text-blue">118.244.233.9:3306</td>
@@ -188,10 +182,7 @@
             <td>2</td>
             <td>0</td>
             <td>4KB </td>
-            <td>10KB</td>
-            <td>73</td>
-            <td>8</td>
-            <td><img src="image/icon-tb.png" /></td>
+           
           </tr>
           <tr>
             <td class="text-kong text-blue">118.244.233.9:3306</td>
@@ -204,10 +195,7 @@
             <td>2</td>
             <td>0</td>
             <td>4KB </td>
-            <td>10KB</td>
-            <td>73</td>
-            <td>8</td>
-            <td><img src="image/icon-tb.png" /></td>
+          
           </tr>
           <tr>
             <td class="text-kong text-blue">118.244.233.9:3306</td>
@@ -220,10 +208,7 @@
             <td>2</td>
             <td>0</td>
             <td>4KB </td>
-            <td>10KB</td>
-            <td>73</td>
-            <td>8</td>
-            <td><img src="image/icon-tb.png" /></td>
+            
           </tr>
           <tr>
             <td class="text-kong text-blue">118.244.233.9:3306</td>
@@ -236,10 +221,7 @@
             <td>2</td>
             <td>0</td>
             <td>4KB </td>
-            <td>10KB</td>
-            <td>73</td>
-            <td>8</td>
-            <td><img src="image/icon-tb.png" /></td>
+          
           </tr>
           <tr>
             <td class="text-kong text-blue">118.244.233.9:3306</td>
@@ -252,10 +234,7 @@
             <td>2</td>
             <td>0</td>
             <td>4KB </td>
-            <td>10KB</td>
-            <td>73</td>
-            <td>8</td>
-            <td><img src="image/icon-tb.png" /></td>
+            
           </tr>
         </tbody>
       </table>

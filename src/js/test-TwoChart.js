@@ -35,7 +35,7 @@ require(["ts/widgets/TSWidget",
         data: data1
     }]
 
-    $('#chartSpline').highcharts({
+    $('#chartSplinelarge2').highcharts({
     chart: {
       type: 'spline',
       animation: Highcharts.svg,
@@ -185,7 +185,7 @@ require(["ts/widgets/TSWidget",
 	        data: data1
 	    }]
 
-	    $('#chartSpline1').highcharts({
+	    $('#chartSplinelarge1').highcharts({
 	    chart: {
 	      type: 'spline',
 	      animation: Highcharts.svg,
