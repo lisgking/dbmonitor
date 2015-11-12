@@ -137,9 +137,15 @@ div.information p {
 	position: absolute;
 	left: 0;
 	right: 0;
+	margin-left:232px;
+}
+
+.demo-main-section .monitor-charts{
+	padding:16px;
 }
 .demo-main-section .charts{
 	border: 1px solid;
+	width:50%;
 }
 div.demo-home {
 	background: url(../image/home-bg.gif) repeat;
@@ -171,13 +177,12 @@ div.nav a.active {
 }
 /*---  侧面弹出面板  ---*/
 .demo-modal {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	right: 0;
-	top: 36px;
 	z-index:0;
 	left: 0;
-	opacity:0;
+	opacity:1;
 	transition: all 0.5s ease-out;
 }
 
@@ -237,6 +242,7 @@ div.nav a.active {
     height: 100%;
     top: 0px;
     left: 0px;
+    z-index: 1;
 }
 .demo-side-pane input {
 	display: none;
